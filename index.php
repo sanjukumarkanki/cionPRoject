@@ -19,48 +19,36 @@
                 <span>Contact</span>
             </button>
         </header>
-        <!-- Banner Container -->
         <div class="  container-fluid p-3  " style=" background-image: url('https://s3-alpha-sig.figma.com/img/b41d/8b52/964ca655f70249b0c7bb8ae9933359f9?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N-suJEHtWDxwS~zdRWrbP4FezCPXtleVtxH5qy6qHpiPcXi3QqRL~QLucAXnNLPqhUsk8kp~88ktf5CMJB-8UDYU8jwfvnZLi3B1GX4u7BGqpcpDj5k5H7celxUi40ch3kafg8LjSLNMvWCdy~pzip5LbAmtJShT6h60zpQumwsF-EHAgeQKEQ0wVIsVmMQS7KoxZQGdD2RdeQVZrujm2nKgTqSNjBHOkt-hdsy1pwxjPb95A6inH6zN6MiiX6pA-S7RwOlzqE-O4hAWpSLNjDQ~nfyIVM4a9fGSxbmKIWZ5kohpl0K4tHDlSAmNen8lnChJhAskZwb77Y05lLT3NQ__'); background-size: cover; background-position : center;">
-            <div class="row ">
-                <div class="col-12 banner-text-container col-md-6">
-                    <div class="p-3">
-                        <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
-                            <span>Rs.10999/-</span>
-                        </h1>
-                        <p>
-                            <img src="assests\Group 35814.png" class="mr-5" height="20px" width="20px" alt="" />
-                            <span class="ml-5">One Free Oncology Consultation</span>
-                        </p>
-                        <p>
-                            <img src="assests\Group 35814.png" class="mr-5" height="20px" width="20px" alt="" />
-                            <span class="ml-5">One Free Oncology Consultation</span>
-                        </p>
-                    </div>
+            <div class="row gap-4">
+                <div class="col-12 col-md-6">
+                    <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
+                        <span>Rs.10999/-</span>
+                    </h1>
+                    <p>One Free Oncology Consultation</p>
+
+                    <br>
+                    <br>
+                    <p class="mt-2">One Free Oncology Consultation</p>
                 </div>
 
-                <div class="col-12  d-none  d-md-block   col-md-6  ">
-                    <div class="p-3 d-flex flex-column  justify-content  align-items-end">
-                        <form style="width: 100%;  background-color: #F2F2F2;" class=" d-flex  flex-column   rounded-2   justify-content-center  align-content-center ">
-                            <h3 class="text-center">Book your Pet Scan Now !</h3>
-                            <input type="text" placeholder="name" />
-                            <input type="text" placeholder="Phone number" />
-                            <select placeholder="Select type of scan">
-                                <option>A</option>
-                                <option>A</option>
-                                <option>A</option>
-                                <option>A</option>
-                            </select>
-                            <div class="  d-flex  flex-column  justify-content-center  align-items-center  w-100 ">
-                                <button type="submit " class=" px-5 py-3">BOOK NOW</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-12  d-none  d-md-block   col-md-5 d-flex flex-column  justify-content-center  align-items-center ">
+                    <form style="width: 100%;  background-color: #F2F2F2;" class=" d-flex  flex-column  px-4 py-5 rounded-2   justify-content-center  align-content-center ">
+                        <h3 class="text-center">Book your Pet Scan Now !</h3>
+                        <input type="text" placeholder="name" />
+                        <input type="text" placeholder="Phone number" />
+                        <select placeholder="Select type of scan">
+                            <option>A</option>
+                            <option>A</option>
+                            <option>A</option>
+                            <option>A</option>
+                        </select>
+                        <button type="submit">BOOK NOW</button>
+                    </form>
                 </div>
             </div>
         </div>
 
-
-        <!-- Form Container -->
         <div class=" container-fluid d-md-none  p-3" style="background-color: #F0D0DD;">
             <div class="row d-flex  flex-column  justify-content-center  align-items-center ">
                 <div class="col-12   d-flex flex-column  justify-content-center  align-items-center ">
@@ -81,14 +69,12 @@
                 </div>
             </div>
         </div>
-
-        <!-- sercies we provide Container -->
-        <div class=" container-fluid p-3  d-flex flex-column " style="background-color: #F0D0DD;">
+        <div class=" container-fluid p-0" style="background-color: #F0D0DD;">
             <?php $cardArray = [["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"]] ?>
             <div class="row bg-white p-3 d-flex   flex-md-row  justify-content-center  align-items-center ">
                 <?php foreach ($cardArray as $card) : ?>
-                    <div class="col-6    upto-off-card-container col-md-3 d-flex flex-column  justify-content-center  align-items-center ">
-                        <img src="<?php echo $card[0] ?>" alt="" class=" mb-3 " />
+                    <div class="col-6 col-md-3 d-flex flex-column  justify-content-center  align-items-center ">
+                        <img src="<?php echo $card[0] ?>" alt="" class=" mb-3" width="80px" height="80px" />
                         <p><?php echo  $card[1]; ?></p>
                     </div>
                 <?php endforeach; ?>
@@ -126,9 +112,9 @@
         <!-- Testimonals -->
         <div class="container mt-5">
             <div class="row p-3 d-flex flex-column  justify-content-center  align-items-center  ">
-                <h1 class=" types-of-scans-text text-center  ">Testimonals</h1>
-                <div class=" col-12   ">
-                    <div id="carouselExampleAutoplaying" style="background-color: #F0D0DD;" class="carousel slide  px-5 py-5 " data-bs-ride="carousel">
+                <h1 class="fs-1 mb-3 fw-bold text-center  ">Testimonals</h1>
+                <div class=" col-12  ">
+                    <div id="carouselExampleAutoplaying" style="background-color: #F0D0DD;" class="carousel slide  px-4 py-5 " data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <p>"Getting my PET CT scan was less stressful than I anticipated, thanks to the helpful staff. Rani was particularly supportive, ensuring I got my reports without any hassle. The follow-up oncology consultation was also a helpful touch." -</p>
@@ -168,9 +154,8 @@
             </div>
         </div>
 
-        <!-- Main Details -->
-        <div style="background-color: #F4F4F4;" class="container-fluid mt-5">
-            <h2 class="text-center  types-of-scans-text mb-5">Guidelines for PET-CT scans</h2>
+        <div style="background-color: #F4F4F4;" class="container-fluid">
+            <h2 class="text-center fw-bold fs-1 mb-5">Guidelines for PET-CT scans</h2>
             <div class="row p-3">
                 <?php
                 $mainGudilensArray = [
@@ -258,13 +243,11 @@
         <div style="background-color: #F0D0DD;" class="container-fluid p-3  mt-5 d-flex flex-column  justify-content-center  align-items-center ">
             <h1 class="fs-2  fw-bold text-center  ">Our Services</h1>
             <?php $array = [["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"]] ?>
-            <div class="row w-100  p-3   flex flex-wrap  justify-content-center  align-items-center ">
+            <div class="row  p-3  gap-4 flex flex-wrap  justify-content-center  align-items-center ">
                 <?php foreach ($array as $each) : ?>
-                    <div class=" p-3  col-6 col-md-4 col-lg-3 ">
-                        <div class="  bg-white rounded-2  d-flex flex-column  justify-content-center  align-items-center p-3">
-                            <img src="<?php echo $each[0] ?>" class="  mb-3" height="80px" width="80px" alt="" />
-                            <p class="fs-3 fw-light "><?php echo $each[1] ?></p>
-                        </div>
+                    <div class=" rounded-2  col-5 col-md-3 bg-white p-5 d-flex flex-column  justify-content-center  align-items-center   ">
+                        <img src="<?php echo $each[0] ?>" class=" h-[] mb-5" alt="" />
+                        <p class="fs-3 fw-light "><?php echo $each[1] ?></p>
                     </div>
                 <?php endforeach; ?>
             </div>
