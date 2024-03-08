@@ -6,7 +6,13 @@
 :root{
     --bgColor : #802A8F;
     --bgFrom :#F0D0DD;
+    --banner-p-font-size : 4vw;
+    --card-heading-font-size : 8vw;
+    --card-heading-lg-font-size : 3.5vw;
+    --pargraph-font-size : 4vw;
+    --pargraph-font-size-lg : 2vw;
 }
+
 
 body{
     padding: 0px;
@@ -15,11 +21,7 @@ body{
     flex-direction: column;
 }
 
-/* .main-body {
-    z-index: 1000;
-    width: 100%;
-    padding: 0px;
-} */
+
 
 header{
     width: 100%;
@@ -92,14 +94,14 @@ header button{
     /* Additional styles as needed */
 
 
-.banner-text-container h1{
+.banner-text-container > div > h1{
     color: white;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 10vw;
 }
 
-.banner-text-container > h1 > span, .banner-text-container > div >p{
-    font-size: 1rem;
+.banner-text-container >div> h1 > span, .banner-text-container > div > p{
+    font-size: 6vw;
     color: #fff;
     font-weight: 500;
     background-color: var(--bgColor);
@@ -110,19 +112,19 @@ header button{
 
 @media screen and (min-width : 768px) {
     .banner-text-container > div > h1{
-        font-size: 3rem;
+        font-size: 4vw;
     }
 
-    .banner-text-container > h1 > span, .banner-text-container > div> p{
-        font-size: 1.5rem;
+    .banner-text-container >div> h1 > span, .banner-text-container > div> p{
+        font-size: 2vw;
     }
 }
 
 
 input,select {
-    margin-top: 15px;
+    margin-top: 1vw;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 3vw;
     font-weight: 400;
     background-color: white;
     border: none;
@@ -133,21 +135,46 @@ input:focus, select:foc{
 }
 
 
+@media screen and (min-width : 768px) {
+    input,select{
+        padding: 0.1vw;
+    }
+}
+
+
+form{
+    padding: 3vw;
+}
+
+@media screen and (min-width : 768px) {
+    form{
+        padding: 2vw;
+    }
+}
+
 form > div{
     text-align: center;
 }
 
 
  form > h3{
-    font-size: 2.5rem;
+    font-size:var(--card-heading-font-size);
     font-weight: 600;
  }
 
 
 @media screen and (min-width : 768px) {
-    .form h3{
-        font-size: 3rem;
+    form > h3{
+        font-size: var(--card-heading-lg-font-size);
     }
+
+    input,select{
+        padding: 1vw;
+    }
+}
+
+form > div{
+    margin-top: 2vw;
 }
 
 form > div > button{
@@ -160,26 +187,40 @@ form > div > button{
     outline: none;
     cursor: pointer;
     color: white;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 2vw;
 
+}
+
+
+
+.upto-off-card-container > img {
+    height: 15vw ;
+    width: 15vw;
+}
+
+
+@media screen and (min-width : 768px) {
+    .upto-off-card-container > img{
+        height: 9vw;
+        width: 9vw;
+    }
 }
 
 .upto-off-card-container > p{
     text-align: center;
-    font-size: 1rem;
+    font-size: var(--pargraph-font-size);
     width: 100%;
 
 }
 
 @media screen and (min-width : 768px) {
     .upto-off-card-container > p{
-        font-size: 2rem;
+        font-size: var(--pargraph-font-size-lg);
     }
 }
 
 .types-of-scans-text{
-    font-size: 3rem;
+    font-size: var(--card-heading-font-size);
     font-weight: 700;
 }
 
@@ -195,7 +236,7 @@ form > div > button{
 
 @media screen and (min-width : 768px) {
     .types-of-scans-text{
-        font-size: 4rem;
+        font-size: var(--card-heading-lg-font-size);
     }
     .types-of-scans-container h3{
         font-size: 2rem;
