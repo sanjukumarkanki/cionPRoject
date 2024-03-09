@@ -6,14 +6,21 @@
 :root{
     --bgColor : #802A8F;
     --bgFrom :#F0D0DD;
-    --banner-p-font-size : 4vw;
-    --card-heading-font-size : 8vw;
-    --card-heading-lg-font-size : 3.5vw;
-    --pargraph-font-size : 4vw;
-    --pargraph-font-size-lg : 2vw;
+    --smalldevicesFontSize : calc(22/35)rem;
+    --largedevicesFontSize : calc(53/85)rem;
+}
+
+html{
+    font-size:  calc(35/500*100)vw;
 }
 
 
+@media screen and (min-width : 768px) {
+    html {
+        font-size:  calc(85/1920*100)vw;
+    }
+}
+    
 body{
     padding: 0px;
     margin: 0px;
@@ -97,60 +104,63 @@ header button{
 .banner-text-container > div > h1{
     color: white;
     font-weight: 700;
-    font-size: 10vw;
+    font-size: calc(35/85)rem;
 }
 
 .banner-text-container >div> h1 > span, .banner-text-container > div > p{
-    font-size: 6vw;
     color: #fff;
     font-weight: 500;
     background-color: var(--bgColor);
     padding: 10px 10px;
     border-radius: 5px;
     margin-top: 10px;
+    font-size: calc(22/35)rem;
 }
 
 @media screen and (min-width : 768px) {
     .banner-text-container > div > h1{
-        font-size: 4vw;
+        font-size: calc(85/85)rem;
     }
 
-    .banner-text-container >div> h1 > span, .banner-text-container > div> p{
-        font-size: 2vw;
+    .banner-text-container > div > h1 > span, .banner-text-container > div> p{
+        font-size: calc(53/85)rem;
     }
 }
 
 
 input,select {
-    margin-top: 1vw;
     padding: 10px;
-    font-size: 3vw;
+    font-size: calc(16/35)rem;
     font-weight: 400;
     background-color: white;
     border: none;
+    border-radius: 5px;
 }
 
-input:focus, select:foc{
+
+
+input:focus, select:focus{
     outline: lightblue;
 }
 
 
 @media screen and (min-width : 768px) {
     input,select{
-        padding: 0.1vw;
+        padding: 10px;
+        font-size: calc(33/85)rem;
     }
 }
 
 
 form{
-    padding: 3vw;
+    padding: 15px;
 }
 
-@media screen and (min-width : 768px) {
+/* @media screen and (min-width : 768px) {
     form{
-        padding: 2vw;
+        padding: ;
     }
-}
+} */
 
 form > div{
     text-align: center;
@@ -158,24 +168,24 @@ form > div{
 
 
  form > h3{
-    font-size:var(--card-heading-font-size);
+    font-size: calc(22/35)rem;
     font-weight: 600;
  }
 
 
 @media screen and (min-width : 768px) {
     form > h3{
-        font-size: var(--card-heading-lg-font-size);
+        font-size: calc(53/85)rem;
     }
 
     input,select{
-        padding: 1vw;
+        padding: 10px;
     }
 }
 
-form > div{
+/* form > div{
     margin-top: 2vw;
-}
+} */
 
 form > div > button{
     background-color: #802A8F;
@@ -187,7 +197,7 @@ form > div > button{
     outline: none;
     cursor: pointer;
     color: white;
-    font-size: 2vw;
+    font-size: calc(22/35)rem;
 
 }
 
@@ -204,45 +214,42 @@ form > div > button{
         height: 9vw;
         width: 9vw;
     }
+    form > div > button{
+        font-size: calc(33/85)rem;
+    
+    }
+    
 }
 
 .upto-off-card-container > p{
     text-align: center;
-    font-size: var(--pargraph-font-size);
+    font-size: var(--smalldevicesFontSize);
     width: 100%;
 
 }
 
 @media screen and (min-width : 768px) {
     .upto-off-card-container > p{
-        font-size: var(--pargraph-font-size-lg);
+        font-size: calc(33/85)rem;
     }
 }
 
 .types-of-scans-text{
-    font-size: var(--card-heading-font-size);
+    font-size: var(--smalldevicesFontSize);
     font-weight: 700;
 }
 
-.types-of-scans-container h3{
-    font-size: 1.5rem;
+.types-of-scans-container h3,.types-of-scans-container > div > p,.types-of-scans-container > div> button, .carousel-item > p{
+    font-size: calc(16/35)rem;
     font-weight: 600;
-}
-
-.types-of-scans-container > div > p{
-    font-size: 1rem;
-    font-weight: 700;
 }
 
 @media screen and (min-width : 768px) {
     .types-of-scans-text{
-        font-size: var(--card-heading-lg-font-size);
+        font-size: var(--largedevicesFontSize);
     }
-    .types-of-scans-container h3{
-        font-size: 2rem;
-    }
-    .types-of-scans-container > div >p {
-        font-size: 1.5rem;
+    .types-of-scans-container h3, .types-of-scans-container > div >p, .types-of-scans-container > div> button, .carousel-item > p{
+        font-size:calc(33/85)rem;
     }
 }
 
@@ -253,29 +260,21 @@ form > div > button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    font-weight: 500;
     color: white;
 }
 
 
 
-.carousel-item > p{
-     font-size: 1rem;
-     font-weight: 400;
-}
 
 .carousel-item > div > p{
-    font-size: .7rem;
+    font-size: calc(16/35)rem;
     font-weight: 400;
 }
 
 @media screen and (min-width : 768px) {
-    .carousel-item > p{
-        font-size: 1.8rem;
-    }
+
     .carousel-item > div > p{
-        font-size: 1rem;
+        font-size: calc(33/85)rem;
     }
 }
 
@@ -287,9 +286,5 @@ form > div > button{
 }
 .accordion-button {
     background-color: rgba(240, 208, 221, 1);
-<<<<<<< HEAD
- } */ 
-
-=======
- }
->>>>>>> c1dbe4851eca0f7faef9b91a26c767ea0b4bf0be
+}
+*/

@@ -19,31 +19,33 @@
                 <span>Contact</span>
             </button>
         </header>
-        <div class="  container-fluid p-3  " style=" background-image: url('https://s3-alpha-sig.figma.com/img/b41d/8b52/964ca655f70249b0c7bb8ae9933359f9?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N-suJEHtWDxwS~zdRWrbP4FezCPXtleVtxH5qy6qHpiPcXi3QqRL~QLucAXnNLPqhUsk8kp~88ktf5CMJB-8UDYU8jwfvnZLi3B1GX4u7BGqpcpDj5k5H7celxUi40ch3kafg8LjSLNMvWCdy~pzip5LbAmtJShT6h60zpQumwsF-EHAgeQKEQ0wVIsVmMQS7KoxZQGdD2RdeQVZrujm2nKgTqSNjBHOkt-hdsy1pwxjPb95A6inH6zN6MiiX6pA-S7RwOlzqE-O4hAWpSLNjDQ~nfyIVM4a9fGSxbmKIWZ5kohpl0K4tHDlSAmNen8lnChJhAskZwb77Y05lLT3NQ__'); background-size: cover; background-position : center;">
-            <div class="row gap-4">
-                <div class="col-12 col-md-6">
-                    <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
-                        <span>Rs.10999/-</span>
-                    </h1>
-                    <p>One Free Oncology Consultation</p>
 
-                    <br>
-                    <br>
-                    <p class="mt-2">One Free Oncology Consultation</p>
+        <div class="  container-fluid p-3  " style=" background-image: url('https://s3-alpha-sig.figma.com/img/b41d/8b52/964ca655f70249b0c7bb8ae9933359f9?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N-suJEHtWDxwS~zdRWrbP4FezCPXtleVtxH5qy6qHpiPcXi3QqRL~QLucAXnNLPqhUsk8kp~88ktf5CMJB-8UDYU8jwfvnZLi3B1GX4u7BGqpcpDj5k5H7celxUi40ch3kafg8LjSLNMvWCdy~pzip5LbAmtJShT6h60zpQumwsF-EHAgeQKEQ0wVIsVmMQS7KoxZQGdD2RdeQVZrujm2nKgTqSNjBHOkt-hdsy1pwxjPb95A6inH6zN6MiiX6pA-S7RwOlzqE-O4hAWpSLNjDQ~nfyIVM4a9fGSxbmKIWZ5kohpl0K4tHDlSAmNen8lnChJhAskZwb77Y05lLT3NQ__'); background-size: cover; background-position : center;">
+            <div class="row ">
+                <div class="col-12 banner-text-container  ">
+                    <div class=" p-3">
+                        <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
+                            <span>Rs.10999/-</span>
+                        </h1>
+                        <p>One Free Oncology Consultation</p>
+                        <p class="mt-2">One Free Oncology Consultation</p>
+                    </div>
                 </div>
 
                 <div class="col-12  d-none  d-md-block   col-md-5 d-flex flex-column  justify-content-center  align-items-center ">
                     <form style="width: 100%;  background-color: #F2F2F2;" class=" d-flex  flex-column  px-4 py-5 rounded-2   justify-content-center  align-content-center ">
-                        <h3 class="text-center">Book your Pet Scan Now !</h3>
-                        <input type="text" placeholder="name" />
-                        <input type="text" placeholder="Phone number" />
+                        <h3 class="text-center ">Book your Pet Scan Now !</h3>
+                        <input type="text" class="mb-3" placeholder="name" />
+                        <input type="text" class="mb-3" placeholder="Phone number" />
                         <select placeholder="Select type of scan">
                             <option>A</option>
                             <option>A</option>
                             <option>A</option>
                             <option>A</option>
                         </select>
-                        <button type="submit">BOOK NOW</button>
+                        <div class="  d-flex  flex-column rounded-2   justify-content-center  align-items-center  w-100 ">
+                            <button type="submit " class=" px-5 py-2">BOOK NOW</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -69,6 +71,7 @@
                 </div>
             </div>
         </div>
+
         <div class=" container-fluid p-0" style="background-color: #F0D0DD;">
             <?php $cardArray = [["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"], ["assests/Group 35729.png", "Upto 40% Discount"]] ?>
             <div class="row bg-white p-3 d-flex   flex-md-row  justify-content-center  align-items-center ">
@@ -83,7 +86,7 @@
 
             <!-- Types of scans we Do -->
             <h2 class="  types-of-scans-text  text-center  mt-5">Types of scan we do</h2>
-            <div class="row d-flex flex-col-column mb-5 flex-sm-row  justify-content-center p-3">
+            <div style=" width : 95%;" class="row  d-flex flex-col-column mb-5 flex-sm-row  justify-content-center p-3">
                 <?php $typeofscansarr = [
                     ["whole Body Analog Pet CT scan", "Rs 18000/-", "Rs.10999/-"],
                     ["whole Body Analog Pet CT scan", "Rs 18000/-", "Rs.10999/-"],
