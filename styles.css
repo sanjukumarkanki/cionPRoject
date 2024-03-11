@@ -25,7 +25,6 @@ html{
 body{
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 
@@ -58,7 +57,7 @@ header img{
 }
 
 header button{
-    background-color: red;
+    background-color: var(--bgColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,8 +95,7 @@ header button{
 
 .banner-container-main > form {
     padding: 15px;
-    width: 17.86rem;
-    
+    width: 17.86rem;    
 }
 
 @media screen and (min-width : 768px) {
@@ -149,6 +147,9 @@ header button{
     top: 20.09090909090909rem;
     font-size: 1rem;
     font-weight: 700;
+    width: 8.943396226415094rem;
+    height: 1.584905660377358rem;
+    align-self: center;
 }
 
  form >  div> button{
@@ -390,6 +391,10 @@ input:focus, select:focus{
     width: 18.5rem;
     height: 14.64454545454545rem;
     border-radius: 0.1945454545454545rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .guidlines-container > img{
@@ -403,11 +408,21 @@ input:focus, select:focus{
     font-size: 1rem;
 }
 
+
+.guidlines-text{
+    width: 15.5rem;
+    height: 1.754716981132075rem;
+    font-weight: 700;
+}
+
 @media screen and (min-width : 768px) {
     .guidlines-container {
         width: 10.38641509433962rem;
         height: 8.22188679245283rem;
         border-radius: 0.1090566037735849rem;
+    }
+    .guidlines-text{
+        width: 17.22641509433962rem;
     }
     .guidlines-container > p{
         font-size: var(--medium-33-font-size);

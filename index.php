@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="   w-100">
@@ -23,15 +24,15 @@
             <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
                 <span>Rs.10999/-</span>
             </h1>
-            <p>
-                <img src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
+            <p class=" align-self-start">
+                <im src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
             </p>
-            <p>
+            <p class="align-self-start">
                 <img src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
             </p>
         </div>
-        <form style="  background-color: #F2F2F2;" class="py-2 d-none d-md-block ">
-            <h3 class="text-center ">Book your Pet Scan Now !</h3>
+        <form style="  background-color: #F2F2F2;" class="d-none py-3 d-md-flex flex-md-column  justify-content-center  align-items-center  ">
+            <h3 class="mb-3">Book your Pet Scan Now !</h3>
             <input type="text" class="mb-3" placeholder="name" />
             <input type="text" class="mb-3" placeholder="Phone number" />
             <select placeholder="Select type of scan">
@@ -112,12 +113,12 @@
     <!--Book Appointment container -->
     <div class="w-full  d-flex justify-content-start book-appointment-container  align-items-center  pt-3 pb-3 w-100 ">
         <img src="assests\Ellipse 2.png" class="mx-3" alt="" />
-        <div class=" d-flex flex-column   flex-grow-1  mx-2 flex-md-row  justify-content-between  align-items-center ">
+        <div class=" d-flex flex-column   flex-grow-1  mx-2 flex-md-row  justify-content-md-between  justify-content-start   align-items-start ">
             <p>Don’t have a prescription?
                 <br />
                 Consult Our Oncologist FREE now!  
             </p>
-            <button>BOOK NOW</button>
+            <button style=" background-color : white; color: black;">BOOK NOW</button>
         </div>
     </div>
 
@@ -159,7 +160,7 @@
 
     <!-- Guidlines for PET-CT -->
     <div style="background-color: #F4F4F4;" class="  pt-5 pb-3">
-        <h2 style="font-size: 1rem;" class="text-center  mb-3">Guidelines for PET-CT scans</h2>
+        <h2 style="font-size: 1rem;" class="text-center   mb-3">Guidelines for PET-CT scans</h2>
         <div class=" d-flex   flex-wrap  justify-content-center  align-items-center ">
             <?php
             $mainGudilensArray = [
@@ -191,8 +192,8 @@
 
 
     <!-- Understanding PET-CT Scans: Importance, Need, and Cost in India-->
-    <div class="pt-3 px-2 pb-3 text-center ">
-        <h3 style="font-size: 1rem;" class=" mb-2 ">Understanding PET-CT Scans: Importance, Need, and Cost in India</h3>
+    <div class="pt-3 px-2 pb-3 d-flex flex-column  justify-content-center  align-items-center  ">
+        <h3 style="font-size: 1rem;" class=" guidlines-text mb-3 ">Understanding PET-CT Scans: Importance, Need, and Cost in India</h3>
         <div class=" d-flex w-100   flex-row flex-wrap   pet-ct-container  justify-content-center align-items-center ">
             <div class="  mb-2  mb-md-0  ">
                 <img src="assests\image 16.png" alt="" />
