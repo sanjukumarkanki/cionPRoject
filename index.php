@@ -24,24 +24,25 @@
             <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
                 <span>Rs.10999/-</span>
             </h1>
-            <p class=" align-self-start">
-                <im src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
+            <p class="align-self-start">
+                <img src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
             </p>
             <p class="align-self-start">
                 <img src="assests\Group 35814.png" alt="" /> One Free Oncology Consultation
             </p>
         </div>
-        <form style="  background-color: #F2F2F2;" class="d-none py-3 d-md-flex flex-md-column  justify-content-center  align-items-center  ">
-            <h3 class="mb-3">Book your Pet Scan Now !</h3>
-            <input type="text" class="mb-3" placeholder="name" />
-            <input type="text" class="mb-3" placeholder="Phone number" />
+        <form style="  background-color: #F2F2F2;" class="d-none d-md-flex flex-md-column  justify-content-center  align-items-center  ">
+            <h3 class="">Book your Pet Scan Now !</h3>
+            <br />
+            <input type="text" class="" placeholder="name" />
+            <input type="text" class="" placeholder="Phone number" />
             <select placeholder="Select type of scan">
                 <option>A</option>
                 <option>A</option>
                 <option>A</option>
                 <option>A</option>
             </select>
-            <div class="  d-flex  flex-column rounded-2   mt-3  justify-content-center  align-items-center  w-100 ">
+            <div class="  d-flex  flex-column rounded-2   justify-content-center  align-items-center  w-100 ">
                 <button type="submit ">BOOK NOW</button>
             </div>
         </form>
@@ -95,7 +96,7 @@
             ];
             foreach ($typeofscansarr as $details) : ?>
                 <div class="bg-white m-1 types-of-scans-container px-4 py-3  text-center d-flex flex-column  justify-content-center  align-items-center  ">
-                    <h3 class="mb-3"><?php echo $details[0]; ?></h3>
+                    <h3 class="mb-2"><?php echo $details[0]; ?></h3>
                     <div class=" d-flex justify-content-between align-items-center">
                         <p style="text-decoration: line-through; color: #BEBBBB;"><?php echo $details[1]; ?></p>
                         <p style="color: #802A8F;"><?php echo $details[2]; ?></p>
@@ -159,7 +160,7 @@
 
 
     <!-- Guidlines for PET-CT -->
-    <div style="background-color: #F4F4F4;" class="  pt-5 pb-3">
+    <div style="background-color: #F4F4F4;" class="  pt-3 pb-3">
         <h2 style="font-size: 1rem;" class="text-center   mb-3">Guidelines for PET-CT scans</h2>
         <div class=" d-flex   flex-wrap  justify-content-center  align-items-center ">
             <?php
@@ -198,35 +199,35 @@
             <div class="  mb-2  mb-md-0  ">
                 <img src="assests\image 16.png" alt="" />
             </div>
-            <div style="border-style: black;" class="  bg-white shadow-lg  border-1  p-0 ">
+            <div style="border-style: black;  " class="  bg-white border-1  p-0 ">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item active " style="width : 100%;">
-                        <h2 class="accordion-header" style="width : 100%;">
-                            <button style="width : 100%;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" style="background-color: pink;" id="flush-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 Accordion Item #1
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                 Accordion Item #2
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header">
+                        <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                 Accordion Item #3
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                         </div>
                     </div>
@@ -237,7 +238,7 @@
 
 
     <!-- Our Services -->
-    <div style="background-color: #F0D0DD;" class="pt-3 pb-3  text-center  ">
+    <div style="background-color: #F0D0DD;" class="pt-3 pb-3 d-flex flex-column  justify-content-center  align-items-center  text-center  ">
         <h1 style="font-size :1rem;">Our Services</h1>
         <?php $array = [["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"],  ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"], ["assests\Group 35729 (2).png", "Career Path"]] ?>
         <div class="   d-flex  flex-wrap  justify-content-center  align-items-center ">
