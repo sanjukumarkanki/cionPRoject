@@ -38,7 +38,7 @@
         </div>
         <!-- Form container -->
         <div class=" small-devices-form-container">
-            <form method="POST" action="redirect.php" style="  background-color: #F2F2F2;" class="d-flex flex-column   justify-content-center  align-items-center  ">
+            <form method="POST" style="  background-color: #F2F2F2;" class="d-flex flex-column   justify-content-center  align-items-center  ">
                 <h2 class="">Book your Pet Scan Now !</h2>
                 <br />
                 <input type="text" class="" name="name" required placeholder="name" />
@@ -61,6 +61,8 @@
                 <img src="<?php echo $card[0] ?>" alt="services-we-do-card-image" />
                 <span class="mx-2"><?php echo  $card[1]; ?></span>
             </div>
+
+
         <?php endforeach; ?>
     </div>
     <!-- Types of scans we Do -->

@@ -240,6 +240,10 @@ input:focus, select:focus{
     font-weight: 700;
 }
 
+.types-of-scans-container h3{
+    width: 7.36rem;
+}
+
 .types-of-scans-container h3,.types-of-scans-container > div > p,.types-of-scans-container >  button{
     font-size: var(--small-16-fontSuze);
     font-weight: 600;
