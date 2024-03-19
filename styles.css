@@ -11,6 +11,9 @@ h2{
     font-weight: 700;
 }
 
+
+
+
 :root{
     --bgColor : #802A8F;
     --bgFromdiv :#F0D0DD;
@@ -63,15 +66,16 @@ header button{
     font-size: 0.54rem;
     line-height: 0.81rem;
     padding: 0.28rem 0.42rem;
-
-    height: 1.05rem;
-    width: 3.72rem;
+    width: 3.81rem;
 
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 0.10rem;
 }
+
+
+
 .banner-container-main{
     background-color : transparent;
     background-position : center;
@@ -80,32 +84,31 @@ header button{
     display: grid;
     grid-template-columns: 1fr;
 }
-
-.banner__heading > h1{
-    color: white;
-    font-weight: 600;
-    font-size: 1.59rem;
-    width: 18.15rem;
-}
-
-.banner__heading{
-    background-image: url('assests/image 17.png');
+.banner__heading__container{
     background-position: center;
     background-size: cover;
     padding: var(--small-padding-20);
     width: 100%;
 }
 
-.banner__heading > div{
+
+.banner__heading__container > h1{
+    color: white;
+    font-weight: 600;
+    font-size: 1.59rem;
+    width: 18.15rem;
+}
+
+.banner__heading__container  div{
     margin-top: var(--small-padding-20);
 }
 
-.banner__heading > div > p> img{
+.banner__heading__container  div  p  img{
    width: 1.5rem;
     height: 1.5rem;
 }
 
-.banner__heading> h1 > span, .banner__heading  > div > p{
+ .banner__heading__container   div  p{
     color: #fff;
     width: 18.04rem;
     height: 1.77rem;
@@ -117,11 +120,11 @@ header button{
     margin-bottom: var(--small-padding-10);
 }
 
-.banner__heading > div >p >span{
+.banner__heading__container  div >p span{
     margin-left: var(--small-padding-15);
 }
 
-.banner__heading> h1 > span{
+.banner__heading__container  h1  span{
     color: #fff;
     width: 18.04rem;
     height: 1.77rem;
@@ -132,7 +135,7 @@ header button{
     padding: 0.18rem;
 }
 
-.small-devices-form-container{
+.small__devices__form__container{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -142,46 +145,43 @@ header button{
     background-color: var(--bgFromdiv);
 }
 
- form{
+form{
     width: 17.86rem;
-    border-radius:0.19rem;
+    height: 21.37rem;
+    border-radius:0.5rem;
     background-color: var(--formbg);
     text-align: center;
     padding: var(--medium-padding-10);
+    box-shadow: 0 0 5px 2px #ccc;
 }
 
 
  form > h2{
-    top: 20.09rem;
     font-size: 1rem;
-    font-weight: 700;
-    width: 8.94rem;
-    height: 1.58rem;
-    align-self: center;
-    margin-bottom: var(--small-padding-15);
-    padding: var(--small-padding-15) var(--small-padding-15);
+    text-align: center;
+    margin-bottom: 0.9rem;
+    padding-top: 2.5rem;
+    font-weight: 800;
 }
 
-
-
  form >  button{
+    position: relative;
+    left: 5rem;
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.07rem;
+    height: 1.8rem;
+    font-size: 1rem;
+    padding: 0rem;
     background-color: var(--bgColor);
     border: none;
     outline: none;
     cursor: pointer;
     color: white;
-    font-size: 1rem;
-    width: 7.07rem;
-    height: 1.81rem;
-    padding: 0.41rem 0.62rem;
-    line-height: 1.5rem;
-    border-radius: 0.15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: var(--small-padding-20);
-    align-items: center;
-    padding: var(--small-padding-10) var(--small-padding-15);
+
+    border-radius: 0.2rem;
 }
 
 input,select {
@@ -189,19 +189,28 @@ input,select {
     font-weight: 400;
     width: 15.81rem;
     height: 2.07rem;
-    padding: var(--small-padding-20);
+    padding: var(--small-padding-10);
     background-color: white;
-    margin-top: var(--small-padding-10);
-    margin-bottom: var(--small-padding-10);
+    /* margin-top: var(--small-padding-10); */
+    margin-bottom: 0.22rem;
     border: none;
     border-radius: 0.19rem;
     margin-bottom: var(--small-padding-20);
-    box-shadow: 1px 1px 2px 0px #3E434740
+    box-shadow: 1px 1px 2px 0px #3E434740;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #767676;
 }
-
-
+input::placeholder{
+    font-size: var(--small-16-fontSuze);
+    color: #767676;
+}
 input:focus, select:focus{
     outline: lightblue;
+}
+select option{
+    font-size: var(--medium-33-font-size);
 }
 
 .serives-we-do-container{
@@ -229,34 +238,32 @@ input:focus, select:focus{
     height:2.81rem;
 }
 
-.types-of-scans-container{
+
+.types__of__scans__container{
     width: 10.43rem;
     height: 7.73em;
-    margin: 0.22rem;
+    margin: 0.22rem ;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius: 0.545;
+
 }
 
 .types-of-scans-text{
     font-size: 1rem;
     font-weight: 700;
 }
-
-.types-of-scans-container h3{
-    width: 7.36rem;
-}
-
-.types-of-scans-container h3,.types-of-scans-container > div > p,.types-of-scans-container >  button{
+.types__of__scans__container > div > p,.types__of__scans__container >  button{
     font-size: var(--small-16-fontSuze);
     font-weight: 600;
 }
 
-.carousel-item > p{
+.types__of__scans__container h3{
+    width: 7.36rem;
     font-size: var(--small-16-fontSuze);
-    font-weight: 400;
+    font-weight: 600;
 }
 
-
-
-.types-of-scans-container >  button{
+.types__of__scans__container >  button{
     background-color: var(--bgColor);
     color: white;
     display: flex;
@@ -269,6 +276,42 @@ input:focus, select:focus{
     border-radius: 0.10rem;
     padding: 0.30rem 0.46rem;
 }
+
+
+.accordion-button:focus {
+    box-shadow: none;
+  }  
+.accordion-button:not(.collapsed), .accordion-item:first-of-type .accordion-button:not(.collapsed) {
+    border: none !important;
+    color: #000;
+    box-shadow: none;
+  }
+
+
+.pet-ct-container .accordion-body, .pet-ct-container .accordion-button{
+    padding-bottom: 0.22rem;
+}
+
+
+.pet-ct-container .accordion-button:not(.collapsed){
+    background-color: var(--bgFromdiv);
+    color: #000 !important;
+}
+
+
+.faqs-container .accordion-button,.faqs-container .accordion-body{
+    padding: 0.36rem;
+}
+
+
+.carousel-item > p{
+    font-size: var(--small-16-fontSuze);
+    font-weight: 400;
+}
+
+
+
+
 
 
 .book-appointment-container{
@@ -294,15 +337,19 @@ input:focus, select:focus{
     border: none;
     outline: none;
     cursor: pointer;
+    padding: var(--small-padding-15);
     background-color: var(--bgColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: var(--small-16-fontSuze);
     line-height: 1.09rem;
     font-weight: 700;
+}
+
+.book-appointment-container > div > button >span{
+    font-size: 0.5rem;
 }
 
 .book-appointment-container{
@@ -326,11 +373,12 @@ input:focus, select:focus{
 .guidlines-container{
     width: 18.5rem;
     height: 14.64rem;
-    border-radius: 0.19rem;
+    border-radius: 0.35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .guidlines-container > img{
     width: 4.68rem;
@@ -349,17 +397,18 @@ input:focus, select:focus{
     grid-template-columns: repeat(2, 1fr);
     place-content: center;
     padding: var(--small-padding-10);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.places-main-container > div:nth-child(1),.places-main-container > div:nth-child(3){
+.places-main-container > div:nth-child(1){
     border-right: 2px solid #fff;
 }
-.places-main-container > div:nth-child(2), .places-main-container > div:nth-child(4){
+.places-main-container > div:nth-child(2), .places-main-container > div:nth-child(3){
     border: none ;
-}
-.places-container{
-    width: 8.84rem;
-    height: 1.95rem;
 }
 
 .places__container{
@@ -367,10 +416,6 @@ input:focus, select:focus{
 }
 
 .places__container > img{
-    width: 1.36rem;
-    height: 1.36rem;
-}
-.places-container > img {
     width: 1.36rem;
     height: 1.36rem;
 }
@@ -384,21 +429,18 @@ input:focus, select:focus{
     margin-left: var(--small-padding-10);
 
 }
-.places-container > p{
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.94rem;
-    color: #fff;
-}
+
+
 
 
 .pet-ct-container > div > img, .pet-ct-container > div {
     width: 20.18rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .pet-ct-container > div > img{
-    height: 15.18rem;
+    height: auto;
 }
 
 .our-services-container-card{
@@ -422,7 +464,8 @@ input:focus, select:focus{
 }
 .faqs-container{
     width: 100%;
-    border-bottom: solid 1px #000000;
+    /* border-bottom: solid 1px #000000; */
+    border-bottom: 0.50px solid #dee2e6;
     /* margin-bottom: var(--small-padding-15); */
 }
 .accordion-header, .accordion-item{
@@ -437,6 +480,12 @@ input:focus, select:focus{
 }
 .accordion-button:not(.collapsed){
     background-color:var(--bgFromdiv);
+    border: none;
+}
+
+.accordion-button:not(.collapsed) .accordion-body{
+    background-color:var(--bgFromdiv);
+    border: none;
 }
 
 .faqs-container  .accordion-button:not(.collapsed){
@@ -448,9 +497,7 @@ input:focus, select:focus{
 }
 
 
-/* .carousel-control-next{
-    display: none;
-} */
+
 
 .accordion-collapse{
     font-size: var(--small-16-fontSuze);
@@ -460,22 +507,31 @@ input:focus, select:focus{
     font-weight: 400;
     background-color: var(--bgFromdiv);
 }
+.faqs-container .accordion-header{
+    height: var(--small-padding-20) !important;
+}
 .faqs-container .accordion-button::after{
-    background-image: url('	https://www.freepnglogos.com/uploads/plus-icon/plus-icon-plus-math-icon-download-icons-9.png');
+    background-image: url('./assests/Group\ 35621\ \(1\).png');
     background-size: cover;
-    width: 0.90rem;
-    height: 0.90rem;
+    width: var(--small-padding-10);
+height:var(--small-padding-10);
 }
 
 .faqs-container .accordion-button:not(.collapsed)::after{
 background-image: url('https://tse2.mm.bing.net/th?id=OIP.olprDojCA6ATaPKWOyB3UgHaHa&pid=Api&P=0&h=180');
 background-size: cover;
-width: 0.59rem;
-height: 0.59rem;
+width: var(--small-padding-10);
+height:var(--small-padding-10);
 columns: var(--bgColor);
-font-weight: 600;
 
 }
+
+.faqs-container .accordion-button{
+    font-weight: 800 !important;   
+     font-size: 0.72rem !important;
+}
+
+
 
 
 .review-card {
@@ -566,8 +622,12 @@ font-weight: 600;
     color: black !important;
 }
 
-.accordion-button{
+.pet-ct-container .accordion-button{
     font-weight: 600;
+}
+
+.pet-ct-container .accordion-body{
+    padding: var(--small-padding-10) 1.25rem 1rem 1.25rem !important;
 }
 
 
@@ -576,8 +636,79 @@ font-weight: 600;
 }
 
 
+.carousel-control-next-icon{
+    background-image: url('	https://cdn0.iconfinder.com/data/icons/user-interface-solid-23/24/Arrow_Right_Square-512.png');
+}
+.carousel-control-prev-icon {
+    background-image: url('	https://cdn0.iconfinder.com/data/icons/user-interface-solid-23/24/Arrow_Left_Square-512.png') !important;
+}
+.carousel-control-next-icon{
+    position: relative;
+    /* bottom: 1.7rem; */
+    left: 1.6rem;
+}
 
 
+
+
+.modal{
+    --bs-modal-bg: none !important;
+    --bs-modal-width : 90% !important;
+    padding: none !important;
+}
+
+iframe{
+    height: 12.09rem !important;
+}
+
+
+.modal-footer{
+    position: relative;
+}
+
+@media screen and (min-width : 768px) {
+    .modal{
+        --bs-modal-width : 70% !important;
+        padding: none !important;
+
+    }
+    iframe{
+        height: 10.12rem !important;
+    }
+
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+.modal-footer button{
+    position: relative;
+    bottom: 02rem;
+    background-color: white !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem !important;
+    color: black !important;
+    font-weight: 800 !important;
+}
+
+
+.carousel-control-prev-icon {
+    position: relative;
+    right: 1.3rem;
+}
+
+
+.accordion-button:not(.collapsed)::after{
+    background-size: 20px;
+    background-position: center;
+}
+.accordion-button::after{
+    background-size: var(--small-padding-15);
+    background-position: center;
+}
 
 
 @media screen and (min-width : 768px) {
@@ -589,17 +720,16 @@ font-weight: 600;
         padding: 0.37rem 0.37rem;
     }
     header img{
-        height: 1.13rem;
-        width: 3.39rem;
+        height: 1.6rem;
+        width: 4.43rem;
     }
     .banner-container-main{
-        background-image: url('assests/image 17.png');
         background-size: cover;
         height: 19.15rem;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
     }
-    .banner__heading{
+    .banner__heading__container{
         background-image: none;
         padding: none;
         width: 100%;
@@ -616,16 +746,16 @@ font-weight: 600;
         width: 11.30rem;
         height: 12.98rem;
     }
-    .banner__heading > h1{
-        font-weight: 500;
+    .banner__heading__container > h1{
+        font-weight: 600;
     }
-    .banner__heading > h1 > span{
+    .banner__heading__container > h1 > span{
         font-size: 1.60rem;
         height: 1.50rem;
-        font-weight: 400;
+        font-weight: 600;
         border-radius: 0.09rem;
     }
-    .banner__heading > div > p{
+    .banner__heading__container > div > p{
         padding: var(--small-padding-10);
         display: flex;
         justify-content: space-between;
@@ -639,53 +769,84 @@ font-weight: 600;
         width: 95%;
     }
 
-    .banner__heading > div> p > img{
+    .book-appointment-container > div > button >span{
+        font-size: var(--medium-33-font-size);
+    }
+
+    .banner__heading__container > div> p > img{
         width: 1.66rem;
         height: 1.50rem;
     }
-
-    .banner__heading > div > p >span{
+    .small__devices__form__container form{
+        box-shadow: none;
+    }
+    .banner__heading__container > div > p >span{
         width: 14rem;
+        font-size: 0.72rem;
     }
 
-    .small-devices-form-container{
+    .small__devices__form__container{
         padding: 0px;
         background-color: transparent;
     }
 
     form{
         width: 11.30rem;
+        height: 12.98rem;
         border-radius:0.19rem;
-        padding: var(--medium-padding-20);
-    }
-
-    form h2{
-        margin-bottom: 0px;
-    }
-    input,select{
-        width: 9.57rem;
-        height: 1.75rem;
-        padding: var(--medium-padding-20);
-        font-size: var(--medium-33-font-size);
-        margin-bottom: var(--medium-padding-20);
-        margin-top: var(--medium-padding-15);
-    }
-    form >  button{
-        width: 4.92rem;
-        height: 1.07rem;
-        border-radius: 0.11rem;
-        padding: 0.30rem 0.45rem;
+        padding: var(--medium-padding-10);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    form h2{
+        font-size: 1rem;
+        position: relative;
+        bottom: 1.5rem;    margin-bottom: 0.9rem;
+        padding-top: 2.5rem;
+        font-weight: 800;
+        width: 8.9rem;
+    }
+    input,select{
+
+
+        padding: 0.5rem;
+        margin: 0.2rem;
+        border-radius: 0.1rem;
+        border: none;
+        position: relative;
+        bottom: 1.8rem;
+        width: 9.58rem;
+        height: 1.75rem;
         font-size: var(--medium-33-font-size);
-        margin-top: var(--medium-padding-15);
+        background-color: white;
+    }
+    .carousel-inner{
+        right: 1rem;
+    }
+
+    form >  button{
+        position: relative;
+        bottom: 1.2rem;
+        width: 4.2rem;
+        left: 0rem ;
+        font-size: 0.62rem;
+        top: auto;
+
+        height: 1.07547rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--small-padding-15);
+        align-self: center;
     }
 
 
-    .banner__heading > h1{
-        font-size: 1.60rem;
+
+    .banner__heading__container > h1{
+        font-size: 1.50rem;
         width: 18.15rem;
         line-height: 2.2rem;
     }
@@ -701,20 +862,35 @@ font-weight: 600;
         width: 2.60rem;
         height: 2.60rem;
     }
-    .types-of-scans-container{
+    .types__of__scans__container{
         width: 9.03rem;
         height: 6.69rem;
-        border-radius: 0.22rem;
+        border-radius: 0.26rem;
         padding: var(--medium-padding-20) 0px;
-        margin: 0.09rem;
+        margin: 0.15rem;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
-    .types-of-scans-container h3, .types-of-scans-container > div >p, .types-of-scans-container >  button, .carousel-item > p{
-        font-size:var(--medium-33-font-size);
+
+    .types__of__scans__container > div{
+        line-height: 0.83rem;
+        text-align: center;
     }
-    .types-of-scans-container > button{
-        padding: 0.26rem 0.39rem;
-        width: 4.54rem;
+
+    .types__of__scans__container > h3{
+        font-size: var(--medium-33-font-size);
+        height: 1.54rem;
+    }
+
+    .types__of__scans__container > div > p{
+        font-size: var(--medium-33-font-size);
+    }
+
+
+    .types__of__scans__container > button{
+        padding: 0.32rem 0.39rem;
+        width: 4.8rem;
         height: 1rem;
+
     }
     .carousel-item > div > img{
         width: 3.37rem;
@@ -728,8 +904,9 @@ font-weight: 600;
     .guidlines-container {
         width: 10.38rem;
         height: 8.22rem;
-        border-radius: 0.10rem;
+        border-radius: 0.26rem;
         padding: var(--medium-padding-20) var(--medium-padding-20);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
     .guidlines-text{
         width: 17.22rem;
@@ -738,17 +915,21 @@ font-weight: 600;
         font-size: var(--medium-33-font-size);
         font-weight: 600;
         margin-bottom: 0px;
+        height: 50%;
+
     }
     .guidlines-container > img{
         width: 2.63rem;
         height: 2.63rem;
+        margin-bottom: var(--medium-padding-15);
+
     }
     .places-main-container{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         /* height: 4.05rem; */
     }
 
-    .places-main-container > div:nth-child(4) {
+    .places-main-container > div:nth-child(3) {
         border:none !important;
     }
 
@@ -756,23 +937,11 @@ font-weight: 600;
     .places-main-container > div:nth-child(2){
         border-right: solid 2px #fff;
     }
-    .places-container{
-        width: 7.35rem;
-        height: 1.62rem;
-        border-right: 1px solid #000;
-    }
     .places__container > img{
         width: 1.13rem;
         height: 1.13rem;
     }
     .places__container > p{
-        font-size: 1rem;
-    }
-    .places-container > img{
-        width: 1.13rem;
-        height: 1.13rem;
-    }
-    .places-container > p{
         font-size: 1rem;
     }
 
@@ -792,6 +961,7 @@ font-weight: 600;
     .our-services-container-card > p{
         font-size: var(--medium-33-font-size);
         font-weight: 600;
+        width: 6.67rem;
     }
     .fqs-main-container{
       grid-template-columns: repeat(2, 1fr);
@@ -812,8 +982,22 @@ font-weight: 600;
         font-size: 0.45rem;
     }
 
+
+    .accordion-button:not(.collapsed)::after{
+        background-size: 0.56rem;
+        background-position: center;
+    }
+    .accordion-button::after{
+        background-size: 0.56rem;
+        background-position: center;
+    }
+    
+
     .faqs-container  .accordion-body{
         background-color: white;
+    }
+    .faqs-container .accordion-button{
+        font-size: 0.52rem !important;
     }
 
     .accordion-button:not(.collapsed){
@@ -832,15 +1016,17 @@ font-weight: 600;
     }
 
     .book-appointment-container > div > p{
-        width: 16.45rem;
         height: 2.13rem;
+        font-weight: 500;
     }
     .book-appointment-container > div > button{
-        width: 8.86rem;
-        height: 2.01rem;
+        width: 8.9rem;
+        height: 2.1rem;
         border-radius: 0.1rem;
         background-color: white;
         color: #000000;
+        font-size: 0.62rem;
+        font-weight: 800;
     }
 
 
@@ -897,6 +1083,7 @@ font-weight: 600;
 
       .accordion-button{
         font-size: 0.62rem;
+        line-height: 1.2rem;
       }
       
       #splide01-slide01, #splide01-slide02, #splide01-slide03{
@@ -904,13 +1091,32 @@ font-weight: 600;
         height: 15.47rem !important;
         background-color: var(--bgFromdiv) !important;
       }
+
+
+    .carousel-control-next-icon{
+        position: relative;
+        /* bottom: 1.7rem; */
+        left: 1.6rem;
+    }
+
+
+
+
+    .carousel-control-prev-icon {
+        position: relative;
+        right: 1.3rem;
+    }
+
+
+    .card-type{
+    }
+    
+    
+
 }
 
 
 
 
 
-/* .carousel-control-prev-icon {
-    background-image: none;
-}
- */
+
