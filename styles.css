@@ -12,8 +12,6 @@ h2{
 }
 
 
-
-
 :root{
     --bgColor : #802A8F;
     --bgFromdiv :#F0D0DD;
@@ -26,7 +24,6 @@ h2{
     --small-padding-15 : 0.68rem;
     --medium-padding-10 : 0.18rem;
     --medium-padding-15 : 0.28rem;
-
     --small-padding-20 : 0.90rem;
     --medium-padding-20 : 0.37rem;
 }
@@ -77,14 +74,14 @@ header button{
 
 
 .banner-container-main{
-    background-color : transparent;
+    background-color : transparent !important;
     background-position : center;
     background-size: cover;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
 }
-.banner__heading__container{
+.banner__heading{
     background-position: center;
     background-size: cover;
     padding: var(--small-padding-20);
@@ -92,23 +89,23 @@ header button{
 }
 
 
-.banner__heading__container > h1{
+.banner__heading > h1{
     color: white;
     font-weight: 600;
     font-size: 1.59rem;
     width: 18.15rem;
 }
 
-.banner__heading__container  div{
+.banner__heading > div{
     margin-top: var(--small-padding-20);
 }
 
-.banner__heading__container  div  p  img{
+.banner__heading > div > p> img{
    width: 1.5rem;
     height: 1.5rem;
 }
 
- .banner__heading__container   div  p{
+ .banner__heading  > div > p{
     color: #fff;
     width: 18.04rem;
     height: 1.77rem;
@@ -120,11 +117,11 @@ header button{
     margin-bottom: var(--small-padding-10);
 }
 
-.banner__heading__container  div >p span{
+.banner__heading > div >p >span{
     margin-left: var(--small-padding-15);
 }
 
-.banner__heading__container  h1  span{
+.banner__heading> h1 > span{
     color: #fff;
     width: 18.04rem;
     height: 1.77rem;
@@ -135,7 +132,7 @@ header button{
     padding: 0.18rem;
 }
 
-.small__devices__form__container{
+.small-devices-form-container{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -163,6 +160,8 @@ form{
     padding-top: 2.5rem;
     font-weight: 800;
 }
+
+
 
  form >  button{
     position: relative;
@@ -202,18 +201,24 @@ input,select {
     appearance: none;
     color: #767676;
 }
+
+
+
 input::placeholder{
     font-size: var(--small-16-fontSuze);
     color: #767676;
+
 }
 input:focus, select:focus{
     outline: lightblue;
 }
+
+
 select option{
     font-size: var(--medium-33-font-size);
 }
 
-.serives-we-do-container{
+  .serives-we-do-container{
     padding: var(--small-padding-15);
     margin-bottom: var(--small-padding-15);
 }
@@ -239,10 +244,10 @@ select option{
 }
 
 
-.types__of__scans__container{
+.types-of-scans-container{
     width: 10.43rem;
     height: 7.73em;
-    margin: 0.22rem ;
+    margin: 0.35rem ;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     border-radius: 0.545;
 
@@ -252,18 +257,18 @@ select option{
     font-size: 1rem;
     font-weight: 700;
 }
-.types__of__scans__container > div > p,.types__of__scans__container >  button{
+.types-of-scans-container > div > p,.types-of-scans-container   button{
     font-size: var(--small-16-fontSuze);
     font-weight: 600;
 }
 
-.types__of__scans__container h3{
+.types-of-scans-container h3{
     width: 7.36rem;
     font-size: var(--small-16-fontSuze);
     font-weight: 600;
 }
 
-.types__of__scans__container >  button{
+.types-of-scans-container   button{
     background-color: var(--bgColor);
     color: white;
     display: flex;
@@ -281,36 +286,91 @@ select option{
 .accordion-button:focus {
     box-shadow: none;
   }  
-.accordion-button:not(.collapsed), .accordion-item:first-of-type .accordion-button:not(.collapsed) {
+.pet-ct-container .accordion-button:not(.collapsed), .pet-ct-container .accordion-item:first-of-type .accordion-button:not(.collapsed) {
     border: none !important;
     color: #000;
     box-shadow: none;
   }
-
+.pet-ct-container .accordion-button{
+    padding-top: var(--small-padding-10);
+    font-weight : 700 !important;
+}
 
 .pet-ct-container .accordion-body, .pet-ct-container .accordion-button{
-    padding-bottom: 0.22rem;
+    padding-bottom: 0px !important;
 }
 
 
 .pet-ct-container .accordion-button:not(.collapsed){
     background-color: var(--bgFromdiv);
-    color: #000 !important;
+    color : #000 !important;
 }
 
 
-.faqs-container .accordion-button,.faqs-container .accordion-body{
+.sub__faqs__container .accordion-button,.sub__faqs__container .accordion-body{
     padding: 0.36rem;
 }
+.sub__faqs__container .accordion-button{
+    font-weight : 800 !important;
+}
 
+.FAQ-container-accordions{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.sub__faqs__container .accordion-button:not(.collapsed){
+    color : var(--bgColor) !important;
+}
 
 .carousel-item > p{
     font-size: var(--small-16-fontSuze);
     font-weight: 400;
+    height: 6.27rem ;
+}
+.modal{
+    --bs-modal-bg: none !important;
+    --bs-modal-width : 90% !important;
+    padding: none !important;
+}
+
+iframe{
+    height: 12.09rem !important;
 }
 
 
+.modal-footer{
+    position: relative;
+}
 
+@media screen and (min-width : 768px) {
+    .modal{
+        --bs-modal-width : 70% !important;
+        padding: none !important;
+
+    }
+    iframe{
+        height: 10.12rem !important;
+    }
+
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+.modal-footer button{
+    position: relative;
+    bottom: 02rem;
+    background-color: white !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem !important;
+    color: black !important;
+    font-weight: 800 !important;
+}
 
 
 
@@ -330,7 +390,7 @@ select option{
     color: white;
 }
 
-.book-appointment-container > div > button{
+.book-appointment-container > div a  button{
     width: 7rem;
     height: 1.36rem;
     border-radius: 0.13rem;
@@ -348,8 +408,8 @@ select option{
     font-weight: 700;
 }
 
-.book-appointment-container > div > button >span{
-    font-size: 0.5rem;
+.book-appointment-container > div a  button {
+    font-size: 0.6rem;
 }
 
 .book-appointment-container{
@@ -395,11 +455,9 @@ select option{
 .places-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-content: center;
     padding: var(--small-padding-10);
-
-    display: flex;
-    flex-wrap: wrap;
+    display : flex;
+    flex-wrap : wrap;
     justify-content: center;
     align-items: center;
 }
@@ -407,9 +465,14 @@ select option{
 .places-main-container > div:nth-child(1){
     border-right: 2px solid #fff;
 }
-.places-main-container > div:nth-child(2), .places-main-container > div:nth-child(3){
+.places-main-container > div:nth-child(3){
+    border:none;
+}
+
+.places-main-container > div:nth-child(2), .places-main-container > div:nth-child(4){
     border: none ;
 }
+
 
 .places__container{
     padding: 0px var(--small-padding-10);
@@ -419,6 +482,7 @@ select option{
     width: 1.36rem;
     height: 1.36rem;
 }
+
 
 .places__container > p{
     font-size: 1rem;
@@ -430,17 +494,14 @@ select option{
 
 }
 
-
-
-
 .pet-ct-container > div > img, .pet-ct-container > div {
     width: 20.18rem;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .pet-ct-container > div > img{
     height: auto;
+    cursor : pointer;
 }
 
 .our-services-container-card{
@@ -462,8 +523,7 @@ select option{
     display: grid;
     grid-template-columns: 1fr;
 }
-.faqs-container{
-    width: 100%;
+.sub__faqs__container{
     /* border-bottom: solid 1px #000000; */
     border-bottom: 0.50px solid #dee2e6;
     /* margin-bottom: var(--small-padding-15); */
@@ -472,9 +532,23 @@ select option{
     background-color: var(--bgFromdiv);
 }
 
-.faqs-container > .accordion-header,.accordion-item{
+.sub__faqs__container > .accordion-header,.accordion-item{
     background-color: white;
 }
+
+.sub__faqs__container .accordion-button{
+    font-weight :700 !important;
+    font-size : 0.72rem !important;
+    color : #000 !important;
+}
+
+/*.FAQ-container-accordions .accordion-button:not(.collapsed), .accordion-item:first-of-type .accordion-button:not(.collapsed){*/
+/*    color : var((--bgFromdiv) !important;*/
+/*}*/
+
+
+
+
 .accordion-header{
     font-weight: 600;
 }
@@ -488,15 +562,14 @@ select option{
     border: none;
 }
 
-.faqs-container  .accordion-button:not(.collapsed){
+.sub__faqs__container  .accordion-button:not(.collapsed){
     background-color: white !important;
+    color : var(--bgColor) !important;
 }
 
-.faqs-container .accordion-body{
+.sub__faqs__container .accordion-body{
     background-color: white;
 }
-
-
 
 
 .accordion-collapse{
@@ -507,31 +580,22 @@ select option{
     font-weight: 400;
     background-color: var(--bgFromdiv);
 }
-.faqs-container .accordion-header{
-    height: var(--small-padding-20) !important;
-}
-.faqs-container .accordion-button::after{
+.sub__faqs__container .accordion-button::after{
     background-image: url('./assests/Group\ 35621\ \(1\).png');
     background-size: cover;
     width: var(--small-padding-10);
 height:var(--small-padding-10);
 }
 
-.faqs-container .accordion-button:not(.collapsed)::after{
+.sub__faqs__container .accordion-button:not(.collapsed)::after{
 background-image: url('https://tse2.mm.bing.net/th?id=OIP.olprDojCA6ATaPKWOyB3UgHaHa&pid=Api&P=0&h=180');
 background-size: cover;
 width: var(--small-padding-10);
 height:var(--small-padding-10);
 columns: var(--bgColor);
+font-weight: 600;
 
 }
-
-.faqs-container .accordion-button{
-    font-weight: 800 !important;   
-     font-size: 0.72rem !important;
-}
-
-
 
 
 .review-card {
@@ -618,14 +682,13 @@ columns: var(--bgColor);
   }
 
 
-.faqs-container .accordion-button.collapsed{
+.sub__faqs__container .accordion-button.collapsed{
     color: black !important;
 }
 
 .pet-ct-container .accordion-button{
     font-weight: 600;
 }
-
 .pet-ct-container .accordion-body{
     padding: var(--small-padding-10) 1.25rem 1rem 1.25rem !important;
 }
@@ -649,50 +712,6 @@ columns: var(--bgColor);
 }
 
 
-
-
-.modal{
-    --bs-modal-bg: none !important;
-    --bs-modal-width : 90% !important;
-    padding: none !important;
-}
-
-iframe{
-    height: 12.09rem !important;
-}
-
-
-.modal-footer{
-    position: relative;
-}
-
-@media screen and (min-width : 768px) {
-    .modal{
-        --bs-modal-width : 70% !important;
-        padding: none !important;
-
-    }
-    iframe{
-        height: 10.12rem !important;
-    }
-
-}
-
-.modal-footer{
-    border-top: none;
-}
-
-.modal-footer button{
-    position: relative;
-    bottom: 02rem;
-    background-color: white !important;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1rem !important;
-    color: black !important;
-    font-weight: 800 !important;
-}
 
 
 .carousel-control-prev-icon {
@@ -729,8 +748,8 @@ iframe{
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
     }
-    .banner__heading__container{
-        background-image: none;
+    .banner__heading{
+        background-image: none !important;
         padding: none;
         width: 100%;
     }
@@ -746,16 +765,16 @@ iframe{
         width: 11.30rem;
         height: 12.98rem;
     }
-    .banner__heading__container > h1{
+    .banner__heading > h1{
         font-weight: 600;
     }
-    .banner__heading__container > h1 > span{
+    .banner__heading > h1 > span{
         font-size: 1.60rem;
         height: 1.50rem;
         font-weight: 600;
         border-radius: 0.09rem;
     }
-    .banner__heading__container > div > p{
+    .banner__heading > div > p{
         padding: var(--small-padding-10);
         display: flex;
         justify-content: space-between;
@@ -768,24 +787,29 @@ iframe{
     .testimonial-single-card  hr{
         width: 95%;
     }
+    
+      .testimonial-single-card  div span{
+        font-size: 0.72rem;
+        font-weight: 800;
+  }
 
-    .book-appointment-container > div > button >span{
+    .book-appointment-container > div a button{
         font-size: var(--medium-33-font-size);
     }
 
-    .banner__heading__container > div> p > img{
+    .banner__heading > div> p > img{
         width: 1.66rem;
         height: 1.50rem;
     }
-    .small__devices__form__container form{
+    .small-devices-form-container form{
         box-shadow: none;
     }
-    .banner__heading__container > div > p >span{
+    .banner__heading > div > p >span{
         width: 14rem;
         font-size: 0.72rem;
     }
 
-    .small__devices__form__container{
+    .small-devices-form-container{
         padding: 0px;
         background-color: transparent;
     }
@@ -845,7 +869,7 @@ iframe{
 
 
 
-    .banner__heading__container > h1{
+    .banner__heading > h1{
         font-size: 1.50rem;
         width: 18.15rem;
         line-height: 2.2rem;
@@ -862,7 +886,7 @@ iframe{
         width: 2.60rem;
         height: 2.60rem;
     }
-    .types__of__scans__container{
+    .types-of-scans-container{
         width: 9.03rem;
         height: 6.69rem;
         border-radius: 0.26rem;
@@ -871,22 +895,22 @@ iframe{
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
 
-    .types__of__scans__container > div{
+    .types-of-scans-container > div{
         line-height: 0.83rem;
         text-align: center;
     }
 
-    .types__of__scans__container > h3{
+    .types-of-scans-container > h3{
         font-size: var(--medium-33-font-size);
         height: 1.54rem;
     }
 
-    .types__of__scans__container > div > p{
+    .types-of-scans-container > div > p{
         font-size: var(--medium-33-font-size);
     }
 
 
-    .types__of__scans__container > button{
+    .types-of-scans-container  button{
         padding: 0.32rem 0.39rem;
         width: 4.8rem;
         height: 1rem;
@@ -926,10 +950,10 @@ iframe{
     }
     .places-main-container{
         grid-template-columns: repeat(3, 1fr);
-        /* height: 4.05rem; */
+        justify-content: center;
     }
 
-    .places-main-container > div:nth-child(3) {
+    .places-main-container > div:nth-child(4) {
         border:none !important;
     }
 
@@ -937,18 +961,12 @@ iframe{
     .places-main-container > div:nth-child(2){
         border-right: solid 2px #fff;
     }
-    .places__container > img{
-        width: 1.13rem;
-        height: 1.13rem;
-    }
-    .places__container > p{
-        font-size: 1rem;
-    }
 
     .pet-ct-container > div > img, .pet-ct-container > div {
         width: 14.43rem;
         margin-left: var(--medium-padding-15);
     }
+
     .our-services-container-card{
         width: 7.63rem;
         height: 7.38rem;
@@ -969,11 +987,6 @@ iframe{
     .fqs-main-container > div{
         width: 47%;
     }
-    .faqs-container{
-        width: 100%;
-    }
-
-
     .accordion-header{
         font-size: var(--medium-33-font-size);
 
@@ -993,12 +1006,25 @@ iframe{
     }
     
 
-    .faqs-container  .accordion-body{
+    .sub__faqs__container  .accordion-body{
         background-color: white;
     }
-    .faqs-container .accordion-button{
-        font-size: 0.52rem !important;
+    
+        .sub__faqs__container .accordion-button{
+                    font-size: 0.52rem !important;
+        }
+        
+        
+        .FAQ-container-accordions{
+    grid-template-columns: 1fr 1fr;
+    gap: 0.56rem;
+    width : 90%;
+}
+
+      .accordion-button{
+        font-weight : 800 !important;
     }
+
 
     .accordion-button:not(.collapsed){
         background-color:var(--bgFromdiv);
@@ -1019,7 +1045,7 @@ iframe{
         height: 2.13rem;
         font-weight: 500;
     }
-    .book-appointment-container > div > button{
+    .book-appointment-container > div a  button{
         width: 8.9rem;
         height: 2.1rem;
         border-radius: 0.1rem;
@@ -1028,8 +1054,6 @@ iframe{
         font-size: 0.62rem;
         font-weight: 800;
     }
-
-
 
     .review-card {
           width: 15.47rem;
@@ -1043,12 +1067,6 @@ iframe{
       }
       
       
-      /* .testimonial-main-container{
-
-        width: 33.47rem;
-        height: 10.30rem;
-        padding: 1rem;
-      } */
 
       .testimonial-single-card{
 
@@ -1067,10 +1085,11 @@ iframe{
         font-size:0.62rem !important;
         line-height: 0.78rem;
         text-align: center;
+        height : 3.92rem;
         
       }
 
-      .testimonial-single-card > div span{
+      .carousel-item > div span{
             font-size: var(--medium-33-font-size);
             font-weight: 600;
       }
@@ -1107,16 +1126,6 @@ iframe{
         right: 1.3rem;
     }
 
-
-    .card-type{
-    }
-    
     
 
 }
-
-
-
-
-
-
