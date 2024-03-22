@@ -1,9 +1,9 @@
 <?php include("array.php"); ?>
-<div class="d-flex flex-column pt-4 pb-4 justify-content-center align-items-center">
+<div class="d-flex flex-column faqs-top-container justify-content-center align-items-center">
     <h2 class="text-center">FAQS</h2>
-    <div style="width : 95%;" class="FAQ-container-accordions">
+    <div class="FAQ-container-accordions">
         <!-- Faq's First Container -->
-        <div class="accordion accordion-flush sub__faqs__container mx-2" id="accordionFlushExample10">
+        <div class="accordion accordion-flush sub__faqs__container  " id="accordionFlushExample10">
             <?php for ($index = 0; $index < 5; $index++) : ?>
                 <div class="accordion-item">
                     <h2 class="accordion-header">

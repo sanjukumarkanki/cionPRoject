@@ -1,5 +1,5 @@
 * {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 html{
@@ -36,11 +36,12 @@ body{
 
 header{
     width: 100%;
+    height: 2rem;
     background-color: white;
     position: sticky !important;
     top: 0;
     z-index: 1001;
-    padding: 10px 30px;
+    padding:0.27rem 0.86rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -84,61 +85,76 @@ header button{
 .banner__heading{
     background-position: center;
     background-size: cover;
-    padding: var(--small-padding-20);
-    width: 100%;
+
+    height: 16.5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 0px 1rem;
 }
 
 
 .banner__heading > h1{
     color: white;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.33rem;
+    width: 15.95rem;
+    padding-top: 2.18rem;
+    margin-bottom: 0.91rem;
+    line-height: 2rem;
+
+}
+
+.banner__heading> h1 > span{
+    color: #fff;
+    width: 8rem;
+    height: 1.68rem;
+    font-weight: 700;
+    background-color: var(--bgColor);
+    border-radius: 0.22rem;
     font-size: 1.59rem;
-    width: 18.15rem;
+    padding: 0px 0.22rem;
 }
 
 .banner__heading > div{
-    margin-top: var(--small-padding-20);
+    /* position: absolute;
+    top: 12.227rem; */
 }
 
-.banner__heading > div > p> img{
-   width: 1.5rem;
-    height: 1.5rem;
-}
-
- .banner__heading  > div > p{
+.banner__heading  > div > p{
     color: #fff;
     width: 18.04rem;
     height: 1.77rem;
     font-weight: 400;
     background-color: var(--bgColor);
     border-radius: 0.22rem;
-    font-size: 1rem;
-    padding: 0.18rem;
-    margin-bottom: var(--small-padding-10);
+    padding: 0 0.31rem;
+    margin-bottom: 0.31rem;
 }
+
+.banner__heading > div > p> img{
+   width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.236rem;
+}
+
 
 .banner__heading > div >p >span{
-    margin-left: var(--small-padding-15);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.banner__heading> h1 > span{
-    color: #fff;
-    width: 18.04rem;
-    height: 1.77rem;
-    font-weight: 700;
-    background-color: var(--bgColor);
-    border-radius: 0.22rem;
-    font-size: 1.59rem;
-    padding: 0.18rem;
-}
+
 
 .small-devices-form-container{
     width: 100%;
+    height: 24.36rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--small-padding-20) 0px;
+    padding: 1.5rem 2.36rem;
     background-color: var(--bgFromdiv);
 }
 
@@ -148,7 +164,7 @@ form{
     border-radius:0.5rem;
     background-color: var(--formbg);
     text-align: center;
-    padding: var(--medium-padding-10);
+    padding: 2.136rem 1.04rem;
     box-shadow: 0 0 5px 2px #ccc;
 }
 
@@ -156,31 +172,11 @@ form{
  form > h2{
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 0.9rem;
-    padding-top: 2.5rem;
     font-weight: 800;
 }
 
-
-
- form >  button{
-    position: relative;
-    left: 5rem;
-    top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 7.07rem;
-    height: 1.8rem;
-    font-size: 1rem;
-    padding: 0rem;
-    background-color: var(--bgColor);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    color: white;
-
-    border-radius: 0.2rem;
+.form__inner__Data__Container{
+    margin-top: 1.9rem;
 }
 
 input,select {
@@ -188,18 +184,20 @@ input,select {
     font-weight: 400;
     width: 15.81rem;
     height: 2.07rem;
-    padding: var(--small-padding-10);
+    padding: 0.49rem 1.13rem;
     background-color: white;
     /* margin-top: var(--small-padding-10); */
-    margin-bottom: 0.22rem;
     border: none;
     border-radius: 0.19rem;
-    margin-bottom: var(--small-padding-20);
+    margin-bottom: 1.36rem;
     box-shadow: 1px 1px 2px 0px #3E434740;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     color: #767676;
+
+
+
 }
 
 
@@ -217,6 +215,25 @@ input:focus, select:focus{
 select option{
     font-size: var(--medium-33-font-size);
 }
+
+
+ form  button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.07rem;
+    height: 1.8rem;
+    font-size: 1rem;
+    padding: 0rem;
+    background-color: var(--bgColor);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 0.2rem;
+}
+
+
 
   .serives-we-do-container{
     padding: var(--small-padding-15);
@@ -247,10 +264,11 @@ select option{
 .types-of-scans-container{
     width: 10.43rem;
     height: 7.73em;
-    margin: 0.35rem ;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    border-radius: 0.545;
-
+    border-radius: 0.35rem;
+    margin-right: 0.24rem ;
+    margin-bottom: 0.59rem;
+    position: relative;
 }
 
 .types-of-scans-text{
@@ -262,10 +280,20 @@ select option{
     font-weight: 600;
 }
 
+
+.types-of-scans-container > div{
+    margin-top: 3.2rem !important;
+    margin-bottom: 0px !important;
+    height: 0.1rem !important;
+}
+
+
 .types-of-scans-container h3{
     width: 7.36rem;
     font-size: var(--small-16-fontSuze);
     font-weight: 600;
+    position: absolute;
+    top: 0.5rem;
 }
 
 .types-of-scans-container   button{
@@ -278,9 +306,12 @@ select option{
     border: none;
     outline: none;
     cursor: pointer;
-    border-radius: 0.10rem;
-    padding: 0.30rem 0.46rem;
+    width: 4.54rem;
+    border-radius: 0.1rem;
+    padding: 0.3rem 0.46rem;
+    height: 1.36rem;
 }
+
 
 
 .accordion-button:focus {
@@ -328,6 +359,7 @@ select option{
     font-size: var(--small-16-fontSuze);
     font-weight: 400;
     height: 6.27rem ;
+    text-align: center;
 }
 .modal{
     --bs-modal-bg: none !important;
@@ -434,6 +466,8 @@ iframe{
     width: 18.5rem;
     height: 14.64rem;
     border-radius: 0.35rem;
+    padding: 0.90rem;
+    margin-bottom: 0.93rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,15 +477,39 @@ iframe{
 .guidlines-container > img{
     width: 4.68rem;
     height: 4.68rem;
+    margin-bottom: 1.01rem;
 }
 .guidlines-container > p{
     font-size: 1rem;
+    font-weight: 600;
 }
 .guidlines-text{
     width: 15.5rem;
     height: 1.75rem;
     font-weight: 700;
 }
+
+.locations-cotnainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.location__sub__container div img{
+    width: 1.36rem;
+    height: 1.36rem;
+}
+
+
+.location__sub__container div p{
+    width: 1.36rem;
+    height: 1.36rem;
+}
+
+
+
+
 .places-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -490,7 +548,7 @@ iframe{
     line-height:1.94rem ;
     color: #fff;
     margin-bottom: 0px;
-    margin-left: var(--small-padding-10);
+
 
 }
 
@@ -510,14 +568,27 @@ iframe{
     border-radius: 0.35rem;
     box-shadow: 0.99px 0.99px 5.96px 0px #00000026;
     box-shadow: 0px 7.14px 32.15px 0px #9EA8BD4F;
+    margin: 0.25rem 0.39rem ;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .our-services-container-card > img{
     width: 4.41rem;
     height: 4.41rem;
+
+    position: absolute;
+    top: 1.3rem;
+    left: 2.87rem;
 }
 .our-services-container-card > p{
     font-size: 1rem;
     font-weight: 600;
+    position: absolute;
+    top: 6.0rem;
 }
 .fqs-main-container{
     display: grid;
@@ -541,10 +612,6 @@ iframe{
     font-size : 0.72rem !important;
     color : #000 !important;
 }
-
-/*.FAQ-container-accordions .accordion-button:not(.collapsed), .accordion-item:first-of-type .accordion-button:not(.collapsed){*/
-/*    color : var((--bgFromdiv) !important;*/
-/*}*/
 
 
 
@@ -628,6 +695,16 @@ font-weight: 600;
     margin-bottom: var(--small-padding-20);
   }
 
+  .testimonial-single-card  div span{
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+#carouselExampleAutoplaying{
+    padding: 1.36rem 0.54rem;
+    position: relative;
+}
+
   .slider__container > p{
     align-self: center;
     font-size: var(--small-16-fontSuze);
@@ -686,8 +763,13 @@ font-weight: 600;
     color: black !important;
 }
 
+.faqs-top-container{
+   padding: 2.04rem 1.68rem; 
+}
+
 .pet-ct-container .accordion-button{
     font-weight: 600;
+    padding-top: var(--small-padding-20);
 }
 .pet-ct-container .accordion-body{
     padding: var(--small-padding-10) 1.25rem 1rem 1.25rem !important;
@@ -699,6 +781,8 @@ font-weight: 600;
 }
 
 
+
+
 .carousel-control-next-icon{
     background-image: url('	https://cdn0.iconfinder.com/data/icons/user-interface-solid-23/24/Arrow_Right_Square-512.png');
 }
@@ -708,11 +792,8 @@ font-weight: 600;
 .carousel-control-next-icon{
     position: relative;
     /* bottom: 1.7rem; */
-    left: 1.6rem;
+    left: 1.5rem;
 }
-
-
-
 
 .carousel-control-prev-icon {
     position: relative;
@@ -746,12 +827,20 @@ font-weight: 600;
         background-size: cover;
         height: 19.15rem;
         grid-template-columns: repeat(2, 1fr);
-        place-items: center;
+        padding: 0px 0.76rem;
+        width: 100%;
+        margin-right: 2.16rem;
     }
     .banner__heading{
         background-image: none !important;
         padding: none;
         width: 100%;
+        margin-top: 0.05rem;
+
+    }
+
+    .form__inner__Data__Container{
+        margin-top: 1rem;
     }
 
     .serives-we-do-container{
@@ -767,13 +856,15 @@ font-weight: 600;
     }
     .banner__heading > h1{
         font-weight: 600;
+        margin-bottom: 0.9rem;
     }
-    .banner__heading > h1 > span{
+    .banner__heading > h1  span{
         font-size: 1.60rem;
         height: 1.50rem;
         font-weight: 600;
         border-radius: 0.09rem;
     }
+
     .banner__heading > div > p{
         padding: var(--small-padding-10);
         display: flex;
@@ -783,6 +874,30 @@ font-weight: 600;
         line-height: 0.56rem;
         border-radius: 0.09rem;
     }
+
+    .banner__heading > div> p > img{
+        width: 1.66rem;
+        height: 1.50rem;
+    }
+    .banner__heading > div > p >span{
+        width: 14rem;
+        font-size: 0.72rem;
+    }
+
+    .small-devices-form-container form{
+        box-shadow: none;
+        padding: 0.49rem 0px 0.39px 0px;
+    }
+
+    .small-devices-form-container{
+        background-color: transparent;
+        width: 11.40rem;
+        height: 13rem;
+        margin-top: 2.6rem;
+        padding: none;
+        margin-left: 0.7rem;
+    }
+
 
     .testimonial-single-card  hr{
         width: 95%;
@@ -795,23 +910,6 @@ font-weight: 600;
 
     .book-appointment-container > div a button{
         font-size: var(--medium-33-font-size);
-    }
-
-    .banner__heading > div> p > img{
-        width: 1.66rem;
-        height: 1.50rem;
-    }
-    .small-devices-form-container form{
-        box-shadow: none;
-    }
-    .banner__heading > div > p >span{
-        width: 14rem;
-        font-size: 0.72rem;
-    }
-
-    .small-devices-form-container{
-        padding: 0px;
-        background-color: transparent;
     }
 
     form{
@@ -827,11 +925,9 @@ font-weight: 600;
 
     form h2{
         font-size: 1rem;
-        position: relative;
-        bottom: 1.5rem;    margin-bottom: 0.9rem;
-        padding-top: 2.5rem;
         font-weight: 800;
         width: 8.9rem;
+        margin-bottom: 0.85rem;
     }
     input,select{
 
@@ -844,6 +940,7 @@ font-weight: 600;
         bottom: 1.8rem;
         width: 9.58rem;
         height: 1.75rem;
+
         font-size: var(--medium-33-font-size);
         background-color: white;
     }
@@ -851,13 +948,13 @@ font-weight: 600;
         right: 1rem;
     }
 
-    form >  button{
+    form div{
+       margin-top: none !important; 
+    }
+
+    form   button{
         position: relative;
-        bottom: 1.2rem;
-        width: 4.2rem;
-        left: 0rem ;
         font-size: 0.62rem;
-        top: auto;
 
         height: 1.07547rem;
         display: flex;
@@ -865,12 +962,14 @@ font-weight: 600;
         align-items: center;
         padding: var(--small-padding-15);
         align-self: center;
+        position: relative;
+        bottom: 1rem;
     }
 
 
 
     .banner__heading > h1{
-        font-size: 1.50rem;
+        font-size: 1.57rem;
         width: 18.15rem;
         line-height: 2.2rem;
     }
@@ -893,6 +992,10 @@ font-weight: 600;
         padding: var(--medium-padding-20) 0px;
         margin: 0.15rem;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+    .types-of-scans-container hr{
+        margin: 0.5rem !important;
     }
 
     .types-of-scans-container > div{
@@ -921,15 +1024,33 @@ font-weight: 600;
         height: 0.50rem;
     }
 
-    
+    #carouselExampleAutoplaying{
+        padding: 1.26rem 0.86rem 1.26rem 0.86rem;
+        
+    }
     .carousel-item > div > p{
         font-size: var(--medium-33-font-size);
+        position: absolute;
+        top: 1.26rem;
     }
+
+    /* .testimonial-single-card > div div{
+        height: 1.36rem;
+    } */
+
+    .testimonial-single-card > div div span{
+        /* margin-bottom: 0.22rem !important; */
+        
+    }
+
+
     .guidlines-container {
         width: 10.38rem;
         height: 8.22rem;
         border-radius: 0.26rem;
-        padding: var(--medium-padding-20) var(--medium-padding-20);
+        margin: 0.18rem;
+        position: relative;
+        padding: var(--medium-padding-20) 0.79rem;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
     .guidlines-text{
@@ -940,12 +1061,16 @@ font-weight: 600;
         font-weight: 600;
         margin-bottom: 0px;
         height: 50%;
+        position: absolute;
+        top: 4.26rem;
 
     }
     .guidlines-container > img{
         width: 2.63rem;
         height: 2.63rem;
-        margin-bottom: var(--medium-padding-15);
+        position: absolute;
+        top: 1.40rem;
+        margin-bottom: 0px;
 
     }
     .places-main-container{
@@ -971,15 +1096,25 @@ font-weight: 600;
         width: 7.63rem;
         height: 7.38rem;
         border-radius: 0.26rem;
+        margin: 0.30rem;
+        position: relative;
+        padding: 0px 0.03rem;
     }
     .our-services-container-card > img{
         width: 3.37rem;
         height: 3.37rem;
+        position: absolute;
+        top: 1rem;
+        left: 2.13rem;
+        margin-bottom: 1.2rem;
     }
     .our-services-container-card > p{
         font-size: var(--medium-33-font-size);
         font-weight: 600;
         width: 6.67rem;
+        position: absolute;
+        top: 4.58rem;
+        left: 0.44rem;
     }
     .fqs-main-container{
       grid-template-columns: repeat(2, 1fr);
@@ -1006,6 +1141,10 @@ font-weight: 600;
     }
     
 
+    .sub__faqs__container{
+        margin: 0.6rem;
+    }
+
     .sub__faqs__container  .accordion-body{
         background-color: white;
     }
@@ -1017,8 +1156,8 @@ font-weight: 600;
         
         .FAQ-container-accordions{
     grid-template-columns: 1fr 1fr;
-    gap: 0.56rem;
-    width : 90%;
+    width : 100%;
+    padding: 0px 1.30rem;
 }
 
       .accordion-button{
@@ -1086,6 +1225,8 @@ font-weight: 600;
         line-height: 0.78rem;
         text-align: center;
         height : 3.92rem;
+        width: 13.75rem;
+        margin-bottom: 0px;
         
       }
 

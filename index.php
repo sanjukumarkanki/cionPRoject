@@ -9,11 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
-    <header class="d-flex  px-4 justify-content-between  align-items-center ">
+    <header class="d-flex   justify-content-between  align-items-center ">
         <img src="	https://www.cioncancerclinics.com/biopsy-test-hyderabad/assets/img/v2/cion-cancer-clinics-logo.svg" alt="company-logo" />
         <button type="button ">
             <a href="tel:18001202676" class=" text-decoration-none  text-white ">
@@ -25,37 +27,41 @@
     <!-- Banner Container -->
     <div class="banner-container-main   " style=" background-image : url('./assests/image-17.webp');">
         <!-- Banner Image Container -->
-        <div style="background-image: url('./assests/image-17.webp');" class="  d-flex flex-column  banner__heading justify-content-start align-items-start  ">
+        <div style="background-image: url('./assests/image-17.webp');" class="   banner__heading   ">
             <h1 class="text-white">PET CT SCAN Cost for cancer diagnostics starts at
+                <br class=" d-md-none" />
                 <span>Rs.10999/-</span>
             </h1>
             <div>
-                <p class=" d-flex justify-content-between align-items-center">
+                <p class=" d-flex justify-content-start align-items-center">
                     <img src="assests\Group 35814.png" alt="doctor-image" />
-                    <span class=" flex-grow-1  ">One Free Oncology Consultation</span>
+                    <span class="   ">One Free Oncology Consultation</span>
                 </p>
-                <p class=" d-flex justify-content-between align-items-center">
+                <p class=" d-flex justify-content-start align-items-center">
                     <img src="	https://cion-landingpage.000webhostapp.com/assests/Group%2035811.png" alt="doctor-image2" />
-                    <span class=" flex-grow-1 ">One Free Oncology Consultation</span>
+                    <span class="  ">One Free Oncology Consultation</span>
                 </p>
             </div>
         </div>
         <!-- Form container -->
-        <div id="formContainer" class=" small-devices-form-container pb-4 pt-4 p-md-0 ">
+        <div id="formContainer" class=" small-devices-form-container ">
             <form method="POST" action="./redirect.php" style="  background-color: #F2F2F2; " class="    ">
                 <h2 class="">Book your Pet Scan <br class=" d-md-none " /> Now !</h2>
-
-                <input type="text" pattern="[a-zA-Z]{3,}" class="" name="name" title="only alphacharacters" required placeholder="Name" />
-                <input type="text" class="" pattern="[0-9]{10}" title="Ten-Digit Numeric Phone Number" name="phone" required placeholder="Phone number" />
-                <select name="scan" required placeholder="Select type of scan">
-                    <option>Select type of scan</option>
-                    <option>Whole Body Analog Pet CT scan</option>
-                    <option>Whole Body Digital Pet CT Scan</option>
-                    <option>PSMA Pet CT Scan</option>
-                    <option>Fdopa Pet CT Scan</option>
-                    <option>Dotatate Pet CT Scan</option>
-                </select>
-                <button type="submit " class=" align-self-center ">Book Now</button>
+                <div class="form__inner__Data__Container">
+                    <input type="text" pattern="[a-zA-Z]{3,}" class="" name="name" title="only alphacharacters" required placeholder="Name" />
+                    <input type="text" class="" pattern="[0-9]{10}" title="Ten-Digit Numeric Phone Number" name="phone" required placeholder="Phone number" />
+                    <select name="scan" required placeholder="Select type of scan">
+                        <option>Select type of scan</option>
+                        <option>Whole Body Analog Pet CT scan</option>
+                        <option>Whole Body Digital Pet CT Scan</option>
+                        <option>PSMA Pet CT Scan</option>
+                        <option>Fdopa Pet CT Scan</option>
+                        <option>Dotatate Pet CT Scan</option>
+                    </select>
+                    <div class=" d-flex  justify-content-center  align-items-center   ">
+                        <button type="submit " class="  ">Book Now</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -83,8 +89,7 @@
     </div>
 
     <!-- Types of scans we Do -->
-    <?php include("typesofscans.php"); ?>
-    </div>
+    <?php include("./Components/typesofscans.php"); ?>
 
     <!--Book Appointment container -->
     <div class=" d-flex justify-content-start book-appointment-container  align-items-center  ">
@@ -104,41 +109,24 @@
     <!-- Testimonials -->
     <div class="pt-3 pb-5 px-3 d-flex flex-column   justify-content-center  align-items-center ">
         <h2 class="mb-3">Testimonals</h2>
-        <?php include('./testimonailarray.php'); ?>
+        <?php include('./Components/testimonailarray.php'); ?>
     </div>
     <!-- Guidlines for PET-CT -->
     <div style="background-color: #F4F4F4;" class="  pt-3 pb-4">
         <h2 style="font-size: 1rem;" class="text-center   mb-3">Guidelines for PET-CT scans</h2>
         <div class=" d-flex   flex-wrap  justify-content-center  align-items-center ">
-            <div class="bg-white mb-3 mb-md-0 p-2  mx-1 text-center  guidlines-container  d-flex flex-column  justify-content-around  align-items-center  ">
+            <div class="bg-white text-center  guidlines-container    ">
                 <img src="assests\Group 35733.png" class="" alt="guidline-card=image" />
                 <p>At least 6 hours of fasting before the scan, but the patient can have plain water.</p>
             </div>
-            <div class="bg-white mb-3 mb-md-0 p-2  mx-1 text-center  guidlines-container  d-flex flex-column  justify-content-center  align-items-center  ">
+            <div class="bg-white text-center  guidlines-container    ">
                 <img src="assests\Group 35734.png" class=" " alt="guidline-card=image" />
                 <p class="mt-1">You are advised to report one hour before the scheduled time</p>
             </div>
-            <div class="bg-white mb-3 mb-md-0 p-2  mx-1 text-center  guidlines-container  d-flex flex-column  justify-content-center  align-items-center  ">
+            <div class="bg-white text-center  guidlines-container    ">
                 <img src="assests\Group 35821.png" class=" " alt="guidline-card=image" />
                 <p>Carry previous PET-CT reports, CDs, medical records, recent serum creatinine and fasting blood sugar reports.</p>
             </div>
-        </div>
-    </div>
-    <!-- Locations Container -->
-    <div class="   pt-3 pb-3 places-main-container   " style=" background-color : #802A8F;">
-        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0  align-items-center ">
-            <img src="assests\Group 35750.png" alt="Chinnagadili" />
-            <p>Chinnagadili</p>
-        </div>
-        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0 align-items-center ">
-            <img src="assests\Group 35750.png" alt="Chinnagadili" />
-            <p>MVP Colony
-            </p>
-        </div>
-        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0  align-items-center ">
-            <img src="assests\Group 35750.png" alt="Chinnagadili" />
-            <p>Jagadamba Centre
-            </p>
         </div>
     </div>
     <!-- Understanding PET-CT Scans: Importance, Need, and Cost in India-->
@@ -211,16 +199,12 @@
     <!-- Our Services -->
     <div style="background-color: #F0D0DD;" class="pt-3 pb-3 d-flex flex-column  justify-content-center  align-items-center  text-center  ">
         <h2 style="font-size :1rem; font-weight : 700;">Our Services</h2>
-        <?php include('ourservices.php') ?>
+        <?php include('./Components/ourservices.php') ?>
     </div>
-
-
     <!-- FAQS Container -->
     <?php
-    include('faqscontainer.php');
+        include('./Components/faqscontainer.php');
     ?>
-
-    </div>
-    </div>
+</body>
 
 </html>

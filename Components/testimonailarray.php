@@ -11,7 +11,11 @@
                                 <p>"<?php echo $testimonials[$j][0]; ?>"</p>
                                 <hr id="carousel-hr">
                                 <div style="width: 90%;" class="d-flex flex-row justify-content-between align-items-center">
-                                    <span style=""><?php echo $testimonials[$j][1]; ?></span>
+                                    <span>
+                                        <span style=""><?php echo $testimonials[$j][1]; ?></span>
+                                        <br />
+                                        <span>Hyderabad</span>
+                                    </span>
                                     <span class="rating"><?php echo $testimonials[$j][2]; ?></span>
                                 </div>
                             </div>
@@ -32,16 +36,20 @@
 </div>
 
 <!--small devices -->
-<div class="carousel-main d-md-none">
-    <div id="carouselExampleAutoplaying" style="background-color: #F0D0DD; border-radius: 0.23rem;" class="carousel slide px-5 py-5 d-md-none" data-bs-ride="carousel">
+<div class="carousel-main w-100 d-md-none">
+    <div id="carouselExampleAutoplaying" style="background-color: #F0D0DD; border-radius: 0.23rem;" class="carousel slide  d-md-none" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php foreach ($testimonials as $index => $testimonial) : ?>
                 <div class="carousel-item testimonial-single-card <?php echo $index === 0 ? 'active' : ''; ?>">
                     <p class="">"<?php echo $testimonial[0]; ?>"</p>
                     <hr id="carousel-hr">
-                    <div style="width: 90%;" class="d-flex flex-row justify-content-between align-items-center">
-                        <span><?php echo $testimonial[1]; ?></span>
-                        <span class="rating"><?php echo $testimonial[2]; ?></span>
+                    <div style="width: 100%;" class="d-flex flex-row justify-content-between align-items-start">
+                        <span>
+                            <span><?php echo $testimonial[1]; ?></span>
+                            <br />
+                            <span>Hyderabad</span>
+                        </span>
+                        <img src="assests\stars bgp.png" alt="start-icon" />
                     </div>
                 </div>
             <?php endforeach; ?>
