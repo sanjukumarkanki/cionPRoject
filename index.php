@@ -5,13 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preload" href="./assests/image-17.webp" as="image">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="">
@@ -22,7 +18,6 @@
                 <span>Contact Us</span>
             </a>
         </button>
-
     </header>
     <!-- Banner Container -->
     <div class="banner-container-main   " style=" background-image : url('./assests/image-17.webp');">
@@ -68,22 +63,22 @@
     <!-- Services We Do -->
     <div class="bg-white   serives-we-do-container d-flex flex-row flex-wrap  justify-content-center  justify-content-md-between   align-items-center  ">
         <div class="d-flex  mb-4 mb-md-0 flex-row justify-content-center align-items-center">
-            <img src="assests/Group 35729.png" alt="services-we-do-card-image" />
+            <img src="assests\Group 35729.png" alt="services-we-do-card-image" />
             <span class="mx-2">Upto 40% Discount</span>
         </div>
 
         <div class="d-flex  mb-4 mb-md-0  flex-row justify-content-center align-items-center">
-            <img src="assests\Group 35723.png" alt="services-we-do-card-image" />
+            <img src="assests\group-35729-1.webp" alt="services-we-do-card-image" />
             <span class="mx-2">Same Day Report</span>
         </div>
 
         <div class="d-flex  flex-row justify-content-center align-items-center">
-            <img src="assests\Group 35729 (2).png" alt="services-we-do-card-image" />
-            <span class="mx-2">Latest Technology</span>
+            <img src="assests\group-35729-2.webp" alt="services-we-do-card-image" />
+            <span class="mx-2">100% Accuracy Assured</span>
         </div>
 
         <div class="d-flex  flex-row justify-content-center align-items-center">
-            <img src="	https://www.cioncancerclinics.com/pet-ct-scan-vizag/assets/img/pet/s2_icon4.webp" alt="services-we-do-card-image" />
+            <img src="	assests\group-35729-3.webp" alt="services-we-do-card-image" />
             <span class="mx-2">Free Doctor Consultation</span>
         </div>
     </div>
@@ -93,7 +88,7 @@
 
     <!--Book Appointment container -->
     <div class=" d-flex justify-content-start book-appointment-container  align-items-center  ">
-        <img src="assests\Ellipse 2.png" class="mx-2" alt="book-appointment-container-doctor-png" />
+        <img src="assests\ellipse-2.webp" class="mx-2" alt="book-appointment-container-doctor-png" />
         <div class=" d-flex flex-column flex-md-row flex-md-grow-1    justify-content-start justify-content-md-between  align-items-center  ">
             <p>Don’t have a prescription?
                 <br />
@@ -129,6 +124,23 @@
             </div>
         </div>
     </div>
+    <!-- Locations Container -->
+    <div class="   pt-3 pb-3 places-main-container   " style=" background-color : #802A8F;">
+        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0  align-items-center ">
+            <img src="assests\Group 35750.png" alt="Chinnagadili" />
+            <p>Chinnagadili</p>
+        </div>
+        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0 align-items-center ">
+            <img src="assests\Group 35750.png" alt="Chinnagadili" />
+            <p>MVP Colony
+            </p>
+        </div>
+        <div class=" d-flex flex-row  justify-content-between places__container mb-3 mb-md-0  align-items-center ">
+            <img src="assests\Group 35750.png" alt="Chinnagadili" />
+            <p>Jagadamba Centre
+            </p>
+        </div>
+    </div>
     <!-- Understanding PET-CT Scans: Importance, Need, and Cost in India-->
     <div class="pt-4 px-2 pb-4 text-center   ">
         <h3 style="font-size: 1rem; " class="w-100 guidlines-text mb-4 ">Understanding PET-CT Scans:
@@ -137,7 +149,7 @@
         <div class=" d-flex w-100   flex-row flex-wrap   pet-ct-container  justify-content-center gap-3   align-items-start ">
             <div class="  mb-2  mb-md-0  ">
                 <!-- Pet-Ct-container Image -->
-                <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://heroic-stroopwafel-3d9b2b.netlify.app/assests/Group%2035829.png" alt="pet-ct-bg-main" />
+                <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assests\Group 35829.webp" alt="pet-ct-bg-main" />
 
                 <!-- Pet-Ct-container Video Url Pop Up Container -->
                 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -201,10 +213,19 @@
         <h2 style="font-size :1rem; font-weight : 700;">Our Services</h2>
         <?php include('./Components/ourservices.php') ?>
     </div>
+
+
     <!-- FAQS Container -->
     <?php
-        include('./Components/faqscontainer.php');
+    include('./Components/faqscontainer.php');
     ?>
+
+    </div>
+    </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </body>
 
 </html>

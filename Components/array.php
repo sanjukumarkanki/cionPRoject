@@ -67,7 +67,7 @@ $ourServices = [
     ['assests\Group 35775.png', 'Cancer Surgeries'],
     ['https://www.cioncancerclinics.com/pet-ct-scan-vizag/assets/img/pet/service_icon2.webp', 'Chemotherapy'],
     ['assests\Group 35778.png', 'Immunotherapy'],
-    ['assests\Group 35729 (2).png', 'Radiation Oncology'],
+    ['assests\group-35729-2.webp', 'Radiation Oncology'],
     ['assests\Group 35776 (1).png', 'Biopsy'],
     ['assests\Group 35778 (1).png', 'Breast & OralScreenings'],
     ['assests\Group 35779.png', 'MRI Scans'],

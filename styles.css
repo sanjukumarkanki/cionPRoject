@@ -1,5 +1,6 @@
 * {
     font-family: "Source Sans 3", sans-serif;
+    user-select : none;
 }
 
 html{
@@ -488,28 +489,6 @@ iframe{
     height: 1.75rem;
     font-weight: 700;
 }
-
-.locations-cotnainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.location__sub__container div img{
-    width: 1.36rem;
-    height: 1.36rem;
-}
-
-
-.location__sub__container div p{
-    width: 1.36rem;
-    height: 1.36rem;
-}
-
-
-
-
 .places-main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -548,7 +527,7 @@ iframe{
     line-height:1.94rem ;
     color: #fff;
     margin-bottom: 0px;
-
+    margin-left: var(--small-padding-10);
 
 }
 
@@ -817,7 +796,7 @@ font-weight: 600;
 
     }   
     header{
-        padding: 0.37rem 0.37rem;
+        padding: 0.50rem 2.30rem;
     }
     header img{
         height: 1.6rem;
@@ -977,7 +956,7 @@ font-weight: 600;
     .serives-we-do-container> div>span{
         font-size: var(--medium-33-font-size);
         line-height: 0.80rem;
-        width: 3.52rem;
+        width: 4.57rem;
         height:  1.45rem;
     }
     
@@ -1083,7 +1062,7 @@ font-weight: 600;
     }
 
 
-    .places-main-container > div:nth-child(2){
+    .places-main-container > div:nth-child(2),.places-main-container > div:nth-child(3){
         border-right: solid 2px #fff;
     }
 
